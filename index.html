@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Kevin Andrea ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<!--                    <span><a href="http://www.gmu.edu"><img border="0" width="75" src="images/gmu.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#home">Introduction</a></li>
+                                <li><a href="bio.html">Biography</a></li>
+<!--                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="zeinalipour.pdf">CV (PDF)</a></li>
+-->                                
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Appointments<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://outlook.office.com/bookwithme/user/9f99f962804d4c2da4c8113f31cd0afd@gmu.edu/meetingtype/-MoDsFXCZUm5wGirHoYn7Q2?anonymous&ep=mLinkFromTile">[In Person] CS 330 or General Appointments</a></li>
+                                
+                                <li><a href="https://cs.gmu.edu/~kandrea/Professor_oh.png"> - Map of Office (Buch D217C)</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="pubs.html">All</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#talks">Talks</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Recommendations<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="uta_recs.html">UTA Recommendation - CS 262/CS 367/CS 471</a></li>
+                                <li><a href="gta_recs.html">GTA or GRA Recommendations</a></li>
+                                <li><a href="ms_recs.html">Graduate School Recommendations</a></li>
+                                <li><a href="job_recs.html">Job or Internship Recommendations</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="office_andrea.jpg">Office</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/Andrea.png">
+                        <img id="mobile-img" src="images/Andrea.png" border="0" height="400" alt="Image of Prof. Andrea"></a>
+                        <div style='width:300px; text-align: center;'>Photo Credit: Lael and Tyler<br><i>C is still better, but Rust is cool.  Thanks guys!</i></div> 
+                </div>
+                <div align="left" class="col-md-4">
+                    <h2>Kevin Andrea
+                        <h5><i>Ph.D., George Mason University, USA, 2023</i></h5>
+
+                   </h2>
+                    
+                    <h4>Assistant Professor (Teaching-Track)<br>
+                        <a href="https://cs.gmu.edu/">Dept. of Computer Science</a><br>
+                        <a href="https://www.gmu.edu/">George Mason University</a><br>
+                        <!-- Tel: (Unavailable - Out of Office) 703-993-5429<br/> -->
+                        <br>
+                        Courses Taught (Fall 2025):
+                        <ul>
+                          <li> CS 367 (Computer Systems and Programming) </li>
+                          <li> CS 471 (Operating Systems) </li>
+                        </ul>
+<!--                        <br><b>Final Exam: <a href="https://cs.gmu.edu/~kandrea/F24/grading/gantt_grading.html"<b>Grading Updates</b></a> </b>
+                         <br>
+-->                         
+                        <!--<br><b>Security Notice: Not Looking for Research Assistants.</b>
+                        <ul>
+                          <li><a href="https://its.gmu.edu/phishing-alerts/open-slots/">ITS Phishing Alerts - Open Slots</a>
+                        </ul> -->
+                        <br><b>2023-2024 Mason Chooses Kindness Ambassador</b> <br><br>
+                        Email: kandrea [at] gmu [dot] edu  <br/>
+                        Affiliated Labs: 
+                        <ul>
+                          <li><a href="https://cnslab.cs.gmu.edu/">Computer and Networking Systems (CNS) Lab</a><br></li>
+                          <li><a href="https://cs.gmu.edu/~robotics/pmwiki.php">Autonomous Robotics Laboratory</a><br></li>
+                        </ul>
+                    </h4>
+                    <h4><i>Expertise: Computer Systems, Embedded Programming, Internet of Things</i> 
+                    
+                </div>
+<!--                
+                <i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+                        <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @dmslucy</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i>
+-->                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        <p class="lead">
+                            <span class="label label-success">Appointments</span><br>
+                        <b>Appointments Are Available for the Fall:</b><br>
+                        <ul>
+                          <li>Check the Appointments tab on the top of this website for booking appointments!<br></li>
+                          <li><b>All appointments are in person </b>(Buchanan Hall D217C: <a href="https://cs.gmu.edu/~kandrea/Professor_oh.png">Map</a>)<b> and are 45 minutes.</b></li>
+                          <ul>
+                            <li> Advising Appointments are available.</li>
+                            <ul>
+                              <li>For CS 330, make sure to bring in your filled-out advising forms.</li>
+                            </ul>
+                            <li> General Appointments are available. </li>
+                            <ul>
+                              <li>This can be for anything from course planning to reviewing exams or projects, to general topics questions.</li>
+                            </ul>
+                          </ul>
+                          </ul>
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        <p class="lead">
+                            <span class="label label-success">Interests</span><br> 
+                        <b>Embedded Systems</b>
+                        <ul style="list-style-type: none;">
+                          <li>From MSP430s to Atmega 328Ps, I enjoy programming directly to hardware and making things come to life.</li>
+                        </ul>
+                        <b>Internet of Things</b>
+                        <ul style="list-style-type: none;">
+                          <li>Using Embedded hardware and low-power radio systems to bridge the gap between your toaster and your air conditioner.</li>
+                        </ul>
+                        <b>Systems Programming</b>
+                        <ul style="list-style-type: none;">
+                          <li>There's nothing in the world better than being able to hold a lovely conversation between your program and the Operating System in its own native language.</li>
+                        </ul>
+                        <b>Programming</b>
+                        <ul style="list-style-type: none;">
+                          <li>From C to Assembly and everything else in between.</li>
+                        </ul>
+                        </p>
+                        <p>
+
+                        <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
+<!--                        <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a>
+                        <a href="zeinalipour.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+-->                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        </div>
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Selected Publications <a href="pubs.html" class="btn btn-primary">All Publications&raquo;</a></h2>
+                        <h4>
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 3
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?user=iqZGec4AAAAJ&hl=en"><font color=white>Citations</font></a>: 44
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 4
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://orcid.org/0000-0002-8141-3266"><font color="white">ORCID</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=56912231000"><font color="white">Scopus</font></a>
+                            </span>
+                        </h4>
+                        <ul>
+                            <li><span class="label label-success">MILCOM'17</span> <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8170748/">"The Design and Implementation of a Multicast Address Moving Target Defensive System for Internet-of-Things Applications"</a>, <b>Kevin Andrea</b>, Arda Gumusalan, Robert Simon, Hugh Harney. <b>2017 IEEE Military Communications Conference (MILCOM'17)</b>, Baltimore, MD, 2017. <font color="red">(Best Paper Award Winner)</font></li>
+                            </li>
+                          <li><span class="label label-success">MSWIM'15</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/2811587.2811614">"Design and Evaluation of an RPL-based Multi-Sink Routing Protocol for Low-Power and Lossy Networks"</a>, <b>Kevin Andrea</b> and Robert Simon. In Proceedings of the 18th <b>ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWIM'15)</b>.  Association of Computing Machinery, New York, NY, USA, 141-150, 2018. </li>
+                                </ul>
+                        <p><a href="pubs.html" class="btn btn-primary">All Publications &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Talks Section -->
+        <section  name="talks" id="talks">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-talks-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Selected Talks <a href="pubs.html" class="btn btn-primary">All Publications and Talks&raquo;</a></h2>
+                        <ul>
+                            <li><span class="label label-success">Gateway2STEM</span> "Creating Engaging Videos"</a>, <b>Kevin Andrea</b>. <b>Gateway2STEM</b> brown bag session invited talk. May 22, 2023.</li>
+                            <li><span class="label label-success">ITL'20</span> <a target="_blank" href="https://journals.gmu.edu/index.php/ITLCP/article/view/2763">"Active Learning Strategies that Transcend Physical Space: Lessons from Across Disciplines"</a>, Laura Poms, Jessica Rosenberg, Jill Nelson, <b>Kevin Andrea</b>, Crystal Anderson, and Alexandria Zylstra. <b>Innovations in Teaching and Learning Conference Proceedings</b>, Volume 12, 2020.</li>
+                            </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+         <!-- Awards Section -->
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Selected Awards and Honors <a href="Andrea_CV.pdf" class="btn btn-primary">More &raquo;</a></h2>
+                         <ul>
+                             <li>
+                                 <span class="label label-info">Best Paper</span> <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8170748">Fred Ellersick Best Unclassified Paper Award</a>,  ``The Design and Implementation of a Multicast Address Moving Target Defensive System for Internet-of-Things Applications'', 2017 IEEE Military Communications Conference (MILCOM'17), Baltimore, MD, 2017 <font color="red">(Best of 153 Accepted Papers)</font>.</span>
+                             </li>
+                             <li>
+                                 <span class="label label-success">Teaching Award</span> <a target="_blank" href="https://stearnscenter.gmu.edu/awards/teaching-excellence-award-winners/">Teaching Excellence Award</a>, George Mason University, 2025.</span>
+                             </li>
+                             <li>
+                                 <span class="label label-success">Teaching Award</span> <a target="_blank" href="https://cec.gmu.edu/meet-our-faculty/faculty-and-staff-excellence-awards">Outstanding Term Assistant Professor</a>, College of Engineering and Computing, George Mason University. 2025.</span>
+                             </li>
+                             <li>
+                                 <span class="label label-success">Teaching Award</span> <a target="_blank" href="#">Outstanding Teaching Award</a>, Department of Computer Science, George Mason University. 2019-2020 Academic Year.</span>
+                             </li>
+                             <li>
+                                 <span class="label label-success">Teaching Award</span> <a target="_blank" href="#">Outstanding Mason Core Info Tech Ethics Course</a>, George Mason University. CS110-003, 2018.</span>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+        <!-- Courses Section -->
+        <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h3>Current - Fall 2025</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming</li>
+                            <ul>
+                              <li><a href="https://cs.gmu.edu/~kandrea/F25/CS367_Syllabus_F25.html">Syllabus</a></li>
+                              <li><a href="https://cs.gmu.edu/~kandrea/F25/CS367_Schedule_F25.html">Planned Schedule and Timeline</a></li>
+                            </ul>
+                            <li><span class="label label-info">CS471</span> Operating Systems</li>
+                            <ul>
+                              <li><a href="https://cs.gmu.edu/~kandrea/F25/CS471_Syllabus_F25.html">Syllabus</a></li>
+                              <li><a href="https://cs.gmu.edu/~kandrea/F25/CS471_Schedule_F25.html">Planned Schedule and Timeline</a></li>
+                             
+                            </ul>
+                        </ul>
+                        <h3>Spring 2025</h3>
+                        <ul>
+                            <li><span class="label label-info">CS471</span> Operating Systems:
+                              <a href="https://cs.gmu.edu/~kandrea/S25/CS471_Syllabus_S25.html">Syllabus</a>,
+                              <a href="https://cs.gmu.edu/~kandrea/S25/CS471_Schedule_S25.html">Planned Schedule and Timeline</a>
+                            </li>
+                        </ul>
+                        <h3>Fall 2024</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming:
+                              <a href="https://cs.gmu.edu/~kandrea/F24/CS367_Syllabus_F24.html">Syllabus</a>,
+                              <a href="https://cs.gmu.edu/~kandrea/F24/CS367_Schedule_F24.html">Planned Schedule and Timeline</a>
+                            </li>  
+                            <li><span class="label label-default">CS571</span> Operating Systems
+                              <a href="https://cs.gmu.edu/~kandrea/F24/CS571_Syllabus_F24.html">Syllabus</a>,
+                              <a href="https://cs.gmu.edu/~kandrea/F24/CS571_Schedule_F24.html">Planned Schedule and Timeline</a>
+                            </li>
+                        </ul>
+                        <h3>Spring 2024</h3>
+                        <ul>
+                            <li><span class="label label-danger">CS262</span> Introduction to Low-Level Programming: <a href="https://cs.gmu.edu/media/syllabi/Spring2024/CS_262All_Professors001_002_003_005.pdf">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S24/CS262_Timeline_S24.html">Timeline</a></li>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/~kandrea/S24/CS367_Syllabus_S24.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S24/CS367_Schedule_S24.html">Planned Schedule and Timeline</a></li>
+                        </ul>
+                        <h3>Fall 2023</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/~kandrea/F23/CS367_Syllabus_F23.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/F23/CS367_Schedule_F23.html">Planned Schedule</a> (<a href="https://cs.gmu.edu/~kandrea/F23/CS367_Timeline_F23.html">Timeline</a>)</li>
+                            <li><span class="label label-default">CS571</span> Operating Systems: <a href="https://cs.gmu.edu/~kandrea/F23/CS571_Syllabus_F23.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/F23/CS571_Schedule_F23.html">Planned Schedule</a> (<a href="https://cs.gmu.edu/~kandrea/F23/CS571_Timeline_F23.html">Timeline</a>)</li>
+                            </ul>
+                        </ul>
+                        <h3>Spring 2023</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/~kandrea/S23/CS367_Andrea_Syllabus_S23.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S23/CS367_Andrea_Schedule_S23.html">Planned Schedule</a> (<a href="https://cs.gmu.edu/~kandrea/S23/schedule_timeline.html">Timeline</a>)</li>
+                            </ul>
+                        </ul>
+                        <h3>Fall 2022</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2022/CS_367AllAll_001_002_003_004.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/F22/CS367_Schedule_Fall2022.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Spring 2022</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Spring2022/CS_367AllAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S22/CS 367 Schedule, Spring 2022.html">Planned Schedule</a></li>
+                            <li><span class="label label-info">CS471</span> Operating Systems: <a href="https://cs.gmu.edu/media/syllabi/Spring2022/CS_471AndreaK001_004.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S22/CS471-Andrea-S22-Schedule.html">Planned Schedule</a>
+                        </ul>
+                        <h3>Fall 2021</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2021/CS_367AllAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/F21/CS367-Andrea-F21-Schedule.html">Planned Schedule</a></li>
+                            <li><span class="label label-info">CS471</span> Operating Systems: <a href="https://cs.gmu.edu/media/syllabi/Fall2021/CS_471AndreaK002_003.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/F21/CS471-Andrea-F21-Schedule.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Spring 2021</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Spring2021/CS_367AllAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S21/367_Schedule_S21.html">Planned Schedule</a></li>
+                            <li><span class="label label-info">CS471</span> Operating Systems: <a href="https://cs.gmu.edu/media/syllabi/Spring2021/CS_471AndreaKDL1.html">Syllabus</a>, <a href="https://cs.gmu.edu/~kandrea/S21/471_Schedule_S21.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Fall 2020</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2020/CS_367Andrea_Han_ZhongAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/F20/CS367_Schedule_Fall2020.html">Planned Schedule</a></li>
+                            <li><span class="label label-info">CS471</span> Operating Systems: <a href="https://cs.gmu.edu/media/syllabi/Fall2020/CS_471AndreaK002_003.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/F20/CS471_Schedule_Fall2020.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Spring 2020</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Spring2020/CS_367AllAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/S20.CS367/CS367_Schedule_Spring2020.html">Planned Schedule</a></li>
+                            <li><span class="label label-info">CS471</span> Operating Systems: <a href="https://cs.gmu.edu/media/syllabi/Spring2020/CS_471AndreaK003.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/S20.CS471/CS471_Schedule_Spring2020.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Fall 2019</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2019/CS_367All_InstructorsAll_Sections.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/F19.CS367/CS367_Schedule_Fall2019.html">Planned Schedule</a></li>
+                            <li><span class="label label-warning">CS531</span> Computer Systems and Fundamentals of Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2019/CS_531AndreaKAll.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/F19.CS367/CS531_Schedule_Fall2019.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Spring 2019</h3>
+                        <ul>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Spring2019/CS_367AndreaK001_003_and_004.html">Syllabus</a>, <a href="https://cs.gmu.edu/%7Ekandrea/F19.CS367/CS367_Schedule_Spring2019.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Fall 2018</h3>
+                        <ul>
+                            <li><span class="label label-primary">CS110</span> Essentials of Computer Science: <a href="https://cs.gmu.edu/media/syllabi/Fall2018/CS_110Andrea_K_OttenJAll.html">Syllabus</a></li>
+                            <li><span class="label label-success">CS367</span> Computer Systems and Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2018/CS367Kim_Andrea001002003.html">Syllabus</a>, <a href="https://cs.gmu.edu/~song/F18.CS367.1/schedule.html">Planned Schedule</a></li>
+                        </ul>
+                        <h3>Fall 2017</h3>
+                        <ul>
+                            <li><span class="label label-danger">CS262</span> Introduction to Low-Level Programming: <a href="https://cs.gmu.edu/media/syllabi/Fall2017/CS_262Andrea_Duric_Otten.html">Syllabus</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section  name="contact" id="contact">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-10">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-contact-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Contact</h2>
+                        <div class="container lead">
+                            <div align="left" class="col-md-3">
+                                <h4 class="myEN">
+                                    POSTAL ADDRESS 
+                                </h4>
+                                
+                                <p class="myEN">
+                                Kevin Andrea<br>
+                                Dept. of Computer Science<br>
+                                George Mason University<br>
+                                4400 University Drive MSN 4A5<br>
+                                Fairfax, VA 22030<br>
+                                </p>
+                                Email: kandrea[at]gmu[dot]edu
+                            </div>
+                            
+                            <div align="left" class="col-md-3">
+                                <h4>CONTACT VCARD</h4>
+                                <p>
+                                <a href="kandrea.vcf"><img src="images/kandrea_qr.png" border="0" width="150"><br>
+                                    kandrea.vcf</a>
+                                </p>
+                            </div>
+                            
+                            <div align="left" class="col-md-3">
+                                <h4>OFFICE ADDRESS</h4>
+                                <p>Kevin Andrea,<br/>
+                                Buchanan Hall, Room D217C<br/>
+                                School of Computing,<br/>
+                                College of Engineering and Computing,<br/>
+                                George Mason University,<br/>
+                                Fairfax Campus,<br/>
+                                Fairfax, VA 22030<br/>
+                                <br/>
+                                </p>
+                            </div>
+<!--                            
+                            <div align="left" class="col-md-3">
+                                <h4>OFFICE DIRECTIONS</h4>
+                                <p><a href="https://goo.gl/RLbcXM" target="_blank"><img src="images/anyplace-directions.jpg" border="0"
+                                    width="150"> <br>https://goo.gl/RLbcXM</a>
+                                </p>
+                            </div>
+-->                            
+                        </div>
+                        Office Map: <img src="https://cs.gmu.edu/~kandrea/Professor_oh.png" width="800"  border="1"><br>
+                                Fairfax Campus<br/>
+                        <hr class="star-primary">
+                    </div>
+                    
+                    </section>
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2023 | Kevin Andrea. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
