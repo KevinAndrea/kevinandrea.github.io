@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align:right;
+  background-color: #eee;
+  border-right: 5px solid #800;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #800000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffd700;
+}
+
+//.sidenav .closebtn {
+//  position: absolute;
+//  top: 0;
+//  right: 25px;
+//  font-size: 36px;
+//  margin-left: 50px;
+//}
+
+.main {
+  margin-left: 210px;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#spacer {
+  background-color: darkgreen;
+  padding: 10px;
+  border-top: 5px solid #800;
+  border-bottom: 5px solid #800;
+}
+
+table, th, td {
+  text-align: center;
+  border:1px solid black;
+  border-collapse: collapse;
+  padding-left:10px;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.la {
+  text-align: left;
+  border:1px solid black;
+}
+
+.brb {
+  border-right:3px solid black;
+}
+
+.noborder {
+  padding-left: 10px;
+  text-align: left;
+  border:none;
+}
+
+li{
+    margin: 2px 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<!--[SIDEBAR]------------------------------------------------------------------------------>
+<div id="mySidenav" class="sidenav">
+<!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+  <h3 align="left">Quick Links</h3>
+  <a href="#">Top of Syllabus</a>
+  <hr>
+  <h3 align="left">Course Info</h3>
+  <a href="#overview">Overview</a>
+  <a href="#sections">Sections</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#oh">Office Hours</a>
+  <a href="#bb">Blackboard/Piazza</a>
+  <a href="#grading">Grading</a>
+  <a href="#accommodations">Accommodations</a>
+  <a href="#zeus">Zeus Server</a>
+  <a href="#honor">Honor Code</a>
+  <hr>
+  <h3 align="left">GMU Policies</h3>
+  <a href="#privacy">Privacy</a>
+  <a href="#inclusion">Inclusion</a>
+  <a href="#disability">Disability Services</a>
+  <a href="#titleix">Title IX</a>
+  <hr>
+  <h3 align="left">Contact Info</h3>
+  <a href="#contact">Email</a>
+</div>
+
+<!--[HEAD]------------------------------------------------------------------------------>
+<div id="head" class="main">
+  <section id="top"><center><h1>Computer Systems and Programming (CS367)<br> Syllabus - Fall 2023</h1></center></section>
+</div><div id="spacer"></div>
+
+<!--[OVERVIEW]------------------------------------------------------------------------------>
+<div id="overview" class="main">
+ <!--- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Index</span> -->
+  <h2>Course Overview</h2>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">Course:</td>
+      <td class="noborder">CS 367</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Credits:</td>
+      <td class="noborder">4</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Repetition:</td>
+      <td class="noborder">Limited to 3 Attempts (see AP. 1.3.4 in the Catalog)</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Modality:</td>
+      <td class="noborder">In-Person Lecture <i>(Online Lectures only in Snow Days or Campus Shutdowns)</i></td>
+    </tr>
+  </table>
+  <p><h3>Course Description:</h3> 
+  CS367 provides an introduction to the field of Systems Programming. This is an area of programming wherein the software written generally provides services to other software.</p>
+  
+  <p>Examples of Systems Programming are <b>Operating Systems</b>, <b>Game Engines</b>, <b>Embedded Systems Programming</b>, <b>Industrial Automation</b>, and <b>Networking</b>.</p>
+
+  <p>This course will prepare you for CS471 (Operating Systems), CS465 (Architecture), CS455 (Networking), and various other courses with systems level programming.</p>
+
+  <h3>Textbook</h3>
+  <p><b>Required Textbook:</b> "Computer Systems: A Programmer's Perspective (3rd ed.) by Randal Bryant and David O'Hallaron (Prentice Hall).</p>
+  <ul>
+    <li>Earlier editions will not work as they use a different Assembly Lanaguage (IA32 vs. x86-64)</li>
+    <li>Do not get the <b>Global Edition</b></li>
+    <ul>
+      <li>The sample problems and their answers are wrong in this version.</li>
+      <li>Author's Personal warning about this: <a href="http://csapp.cs.cmu.edu/3e/errata.html">Errata</a> </li>
+    </ul>
+  </ul>
+
+  <h3>Course Outcomes</h3>
+  <ol>
+    <li>Demonstrate understanding of data representation at machine level, including binary numeric encodings, data structures, and Boolean operations.</li>
+    <li>Demonstrate understanding of program representation at the machine level using assembly language, including control flow, procedures, and file linking.</li>
+    <li>Demonstrate practical techniques of system tools to understand low level behaviors of programs, including debuggers.</li>
+    <li>Understanding of basic CPU design including circuits, pipelining, and digital logic.</li>
+    <li>Demonstrate understanding memory concepts including virtual memory, caching, and dynamic memory layout.</li>
+    <li>Demonstrate understanding of computer processes, including its lifecycle and communications with the system.</li>
+  </ol>
+
+  <h3>Prerequisites</h3>
+  <ul>
+    <li>Grade of C or better in MATH 125 (Discrete Math), <b>AND</b>
+    <li>Grade of C or better in [CS 262 or CS 222] (C Programming), <b>AND</b>
+    <li>Grade of C or better in CS 110 (Essentials of Computer Science)
+  </ul>
+
+  <h3>Topics for this Semester Will Include:</h3>
+  <ul>
+    <li>Data and Number Representation</li>
+    <li>Assembly Programming</li>
+    <li>Processes and Signals</li>
+    <li>Unix I/O</li>
+    <li>CPU Architecture and Design</li>
+    <li>Memory Management</li>
+    <li>Linking and Loading</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[SECTIONS]------------------------------------------------------------------------------>
+<div id=sections class=main>
+  <h2>Sections</h2>
+  All sections are taught in-person.<br><br>
+  <b>Lecture Sections: Prof. Hamza Mughal</b><br>
+  <table style="width:50%">
+    <tr>
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>T/Th 9:00am - 10:15am</td>
+      <td>Horizon Hall 2009</td>
+    </tr>
+    <tr>
+      <td>004</td>
+      <td>T/Th 12:00pm - 1:15pm</td>
+      <td>Horizon Hall 2009</td>
+    </tr>
+  </table>
+  <br>
+  <b>Lecture Sections: Prof. Kevin Andrea</b><br>
+  <table style="width:50%">
+    <tr>
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>M/W 9:00am - 10:15am</td>
+      <td>Horizon Hall 2009</td>
+    </tr>
+    <tr>
+      <td>005</td>
+      <td>F 10:30am - 1:10pm</td>
+      <td>Sandbridge Hall 107</td>
+    </tr>
+  </table>
+  <br>
+  <b>Recitation Sections</b><br>
+  <table style="width:70%">
+    <tr>
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+      <th>GTA Instructor</th>
+    </tr>
+    <tr>
+      <td>308</td>
+      <td>F 8:30am - 9:20am</td>
+      <td>Innovation Hall 326</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>F 9:30am - 10:20am</td>
+      <td>Innovation Hall 222</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td>F 10:30am - 11:20am</td>
+      <td>Innovation Hall 222</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>303</td>
+      <td>F 11:30am - 12:20pm</td>
+      <td>Innovation Hall 222</td> 
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>304</td>
+      <td>F 12:30pm - 1:20pm</td>
+      <td>Innovation Hall 222</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>305</td>
+      <td>F 1:30pm - 2:20pm</td>
+      <td>Innovation Hall 326</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>306</td>
+      <td>F 2:30pm - 3:20pm</td>
+      <td>Innovation Hall 326</td>
+      <td>TBA</td>
+    </tr>
+    <tr>
+      <td>307</td>
+      <td>F 3:30pm - 4:20pm</td>
+      <td>Innovation Hall 319</td>
+      <td>TBA</td>
+    </tr>
+  </table>
+</div><div id=spacer></div>
+
+<!--[SCHEDULE]------------------------------------------------------------------------------>
+<div id=schedule class=main>
+  <h2>Schedule</h2>
+  <p>These schedules are subject to change as needed during the semester.</p>
+  <b>Planned Schedule: <a href="https://cs.gmu.edu/~kandrea/F23/CS367_Schedule_F23.html">https://cs.gmu.edu/~kandrea/F23/CS367_Schedule_F23.html</a></b><br><br>
+  <b>Timeline Version of Schedule: <a href="https://cs.gmu.edu/~kandrea/F23/CS367_Timeline_F23.html">https://cs.gmu.edu/~kandrea/F23/CS367_Timeline_F23.html</a></b>
+  <ul>
+    <li>The planned course schedule is also found on Blackboard under Schedule</li>
+  </ul>
+</div><div id=spacer></div
+
+<!--[OH]------------------------------------------------------------------------------>
+<div id=oh class=main>
+  <h2>Office Hours</h2>
+  <p>Times and Locations will be kept updated on <b>Piazza</b>.</p>
+
+  <h3>Office Hours Policies</h3>
+  <ul>
+    <li>Feel free to go to any Office Hours for this course!</li>
+    <li>Occasionally the session may be too busy to look at individual code questions.</li>
+    <ul>
+      <li>If so, please feel free to post your code-related questions to Piazza, Private to Instructors</li>
+      <li>This allows a much larger group of TAs to take time to read through your question and code.</li>
+      <li>Just make sure to limit it to the portion of code in question, and provide context!</li>
+    </ul>
+  </ul>
+
+  <h3>Office Hours Locations and Maps</h3>
+  <h4>Professor's Office Hours</h4>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">Professor</th>
+      <th class="noborder">Location</th>
+      <th class="noborder">Map</th>
+    </tr>
+    <tr>
+      <td class="noborder">Prof. Andrea</td>
+      <td class="noborder">Buchanan Hall D217C</td>
+      <td class="noborder">Map Link: <a href="https://cs.gmu.edu/~kandrea/F23/Professor_oh.png">Buchanan Hall in the CS Undergraduate Office on the Second Floor.</a></td>
+    </tr>
+    <tr>
+      <td class="noborder">Prof. Mughal</td>
+      <td class="noborder">Buchanan Hall D217F</td>
+      <td class="noborder">Map Link: <a href="https://cs.gmu.edu/~kandrea/F23/Professor_oh.png">Buchanan Hall in the CS Undergraduate Office on the Second Floor.</a></td>
+    </tr>
+  </table>
+
+  <h4>GTA Office Hours</h4>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">GTA Office Hours (All GTAs):</td>
+      <td class="noborder">Map Link: <a href="https://cs.gmu.edu/~kandrea/GTA_oh.png">Engineering Building 4456 on the Fourth Floor.</a> </td>
+    </tr>
+  </table>
+  
+
+</div><div id=spacer></div
+
+<!--[BB]------------------------------------------------------------------------------>
+<div id=bb class=main>
+  <h2>Blackboard and Piazza</h2>
+
+  <h3>Blackboard</h3>
+
+  <p>Blackboard Link: <a href="https://mymasonportal.gmu.edu">https://mymasonportal.gmu.edu</a></p>
+
+  <p>There are <b>2</b> different Blackboard pages for our course.</p>
+  <ul>
+    <li> <b>CS367 - Lectures</b> </li>
+    <ul>
+      <li> Lecture Slides, Livecode, Worksheets, Project Assignments, Quizzes, Videos, Course Grades</li>
+      <li> All Projects are Posted here and are Submitted here.</li>
+      <li> All Quizzes are taken online through this Blackboard page.</li>
+    </ul>
+    <li> <b>CS367 - Recitations</b> </li>
+    <ul>
+      <li> Recitation Materials, Recitation Solutions, Participation Grades, Recitation Feedbacks </li>
+    </ul>
+  </ul>
+
+  <h3>Piazza</h3>
+  <p>This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself. Rather than emailing questions to the teaching staff, we encourage you to post your questions on Piazza.</p>
+
+  <p>For security, <b>we will be adding everyone to Piazza manually</b>.
+  <ul>
+    </li>After August 21, if you do not have access through your netid@gmu.edu address, please email your Professor and we'll add you to the board.</p>
+  </ul>
+
+  <p><b>Piazza Link: https://piazza.com/gmu/fall2023/cs367/</b>
+
+  <h3>Piazza Policies</h3>
+  <ul>
+    <li><b>Project Updates, Clarifications, and FAQ Posts will be made on Piazza.</b></li>
+    <ul>
+      <li>You will be required to check Piazza or the Blackboard Assignment itself during Projects for such Errata</li>
+      <li>Make sure you can access Piazza before the first Project!</li>
+    </ul>
+    <li><b>Do not post Project-Related Code Publicly on Piazza</b></li>
+    <ul>
+      <li>You are free to post Design related questions or Project-related code <b>Private to Instructors</b></li>
+    </ul>
+    <li><b>Piazza is the best place to post Code related questions.</b></li>
+    <ul>
+      <li>Feel free to post your code-related questions to Piazza, Private to Instructors</li>
+      <li>This allows a much larger group of TAs to take time to read through your question and code.</li>
+      <li><b>Just make sure to limit it to the portion of code in question, and provide context!</b></li>
+      <ul>
+        <li>Make sure to provide information about what debugging steps you've already taken to narrow the problem down.</li>
+        <li>Please do not post cell phone photos of your code.  You can copy and paste into Piazza, which does have Syntax Highlighting</li>
+      </ul>
+    </ul>
+    <li>Please ask any question about topics, policy clarifications, sample exam questions, etc on Piazza!</li>
+    <ul>
+      <li>If you have any questions about Midterm problems or Quiz Grading, email your Professor directly.</li>
+    </ul>
+    <li><b>Do not post any questions about the Weekly Quiz until after the Answers are Released on Friday mornings.</b></li>
+  </ul>
+
+
+</div><div id=spacer></div
+
+<!--[GRADING]------------------------------------------------------------------------------>
+<div id=grading class=main>
+  <h2>Grading</h2>
+  <p>The course will have one midterm and a final. Much of the work during the semester will be completing projects, as well as regular recitation activities (written and digital).</p>
+
+  <p><b>In general, all grades should be available about two weeks after submission.</b></p>
+
+  <h3>Semester Grades</h3>
+  <table style="width:50%">
+    <tr>
+      <th>Category</th>
+      <th>Grade %</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>Projects</td>
+      <td>36%</td>
+      <td class="la">Four Projects (9% Each)</td>
+    </tr>
+    <tr>
+      <td>Quizzes</td>
+      <td>7%</td>
+      <td class="la">Lowest Two Quizzes Dropped</td>
+    </tr>
+    <tr>
+      <td>Recitation</td>
+      <td>7%</td>
+      <td class="la">Participation Based, One Dropped</td>
+    </tr>
+    <tr>
+      <td>Midterm</td>
+      <td>20%</td>
+      <td class="la">No Replacement Policies</td>
+    </tr>
+    <tr>
+      <td>Final</td>
+      <td>30%</td>
+      <td class="la">Cumulative</td>
+    </tr>
+  </table>
+
+  <h3>Grading Scale</h3>
+  <table style="width:50%">
+    <tr>
+      <th>Grade</th>
+      <th class="brb">Cut-Off</th>
+      <th>Grade</th>
+      <th class="brb">Cut-Off</th>
+      <th>Grade</th>
+      <th class="brb">Cut-Off</th>
+      <th>Grade</th>
+      <th>Cut-Off</th>
+    </tr>
+    <tr>
+      <td>A+</td>
+      <td class="brb">98%</td>
+      <td>B+</td>
+      <td class="brb">88%</td>
+      <td>C+</td>
+      <td class="brb">78%</td>
+      <td>D</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td class="brb">92%</td>
+      <td>B</td>
+      <td class="brb">82%</td>
+      <td>C</td>
+      <td class="brb">72%</td>
+      <td>F</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>A-</td>
+      <td class="brb">90%</td>
+      <td>B-</td>
+      <td class="brb">80%</td>
+      <td>C-</td>
+      <td class="brb">70%</td>
+    </tr>
+  </table>
+
+  <h3>Grade Contesting</h3>
+  <ul>
+    <li> For Exams and Quizzes: Contact your Professor </li>
+    <li> For Projects and Recitations: Contact Your Recitation GTA </li>
+    <ul>
+      <li> If you are unable to come to a resolution with your GTA, please contact your Professor.</li>
+    </ul>
+  </ul>
+
+  <h3>Grading Policies</h3>
+  <ul>
+    <li> There are no make-up projects, quizzes, recitations, or exams. </li>
+    <li> There are no additional extra-credit assignments. </li>
+    <li> There are no points associated with unused late-tokens. </li>
+    <li> There is no course-long curve at the end of the semester. </li>
+  </ul>
+
+  <h3>Project Policies</h3>
+  <ul>
+    <li>Blackboard Submission must be made by the <b>Project Due Date</b></li>
+    <ul>
+      <li><b>No Project is Accepted more than 48-hours after the Project Due Date.</b></li>
+      <ul>
+        <li><b>You may only use up to 2 of your total Late Tokens for a single Project.</b></li>
+      </ul>
+      <li>Your code must compile and run on Zeus to be graded.</li>
+      <ul>
+        </li>If your code does not compile on Zeus, it cannot be graded.</li>
+      </ul>
+      <li>Check your submission to make sure it is the correct files!</li>
+      <ul>
+        <li>Turning in the wrong files will likely result in a <b>zero</b>.</li>
+      </ul>
+      <li>Back up your work!
+      <ul>
+        <li>Catastrophic computer/file failure or corruption will not be cause for an extension.</li>
+        <li>Do not put your code in any public repository where others can find it.</li>
+        <li>You may use private repositories (github has a private mode).</li>
+      </ul>
+    </ul>
+    <br>
+    <li><b>Late Tokens:</b></li>
+    <ul>
+      <li>Everyone starts with 3 Late Tokens total for all Projects during the Semester.</li>
+      <li>Each Late Token adds 24 hours to the Deadline of a Project.</li>
+      <li>Late Tokens are <b>Automatically Used</b> when you submit Late.</li>
+      <ul>
+        <li>You don't need to tell your GTA, they will deduct Late Tokens based on Submission Time.</li>
+      </ul>
+      <li><b>You may only use up to 2 of your total Late Tokens for a single Project.</b></li>
+      <li>Unused Tokens have no Grade Value at the end of the semester.</li>
+    </ul>
+    <br>
+    <li><b>Late Work (No Tokens Remaining):</b></li>
+    <ul>
+      <li>You may only submit up to 48 hours after the Official Deadline of the Project.</li>
+      <li>If you run out of Late Tokens, each additional day late will have a grade penalty.</li>
+      <ul>
+        <li>For every late day without a token, a 25% Ceiling Pentalty will be Applied</li>
+        <li>So, for one day late without a token, your max possible score will be a 75%.</li>
+        <li>And for two days late without tokens, your max possible score willbe a 50%.</li>
+      </ul>
+    </ul>
+    <br>
+    <li><b>Contesting Project Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to contact your GTA with a grading issue.</li>
+      <li>After this one week period, all grades will be fixed.</li>
+    </ul>
+  </ul>
+
+  <h3>Exam Policies</h3>
+  <ul>
+    <li> There are no make-up exams. </li>
+    <li> There are no drops or replacements for exams. </li>
+    <li> Exams are in-person using pencil and paper. </li>
+    <ul>
+      <li> In general, no computers, cell phones, books, calculators, or other such resources are allowed.
+      <li> You can bring in one page (8.5"x11" US Letter) with handwritten notes (both sides of the paper are allowed) for each exam. </li>
+    </ul>
+    <br>
+    <li> <b> Missing an Exam: </b></li>
+    <ul>
+      <li> If you will miss an exam, let your Professor know immediately and we can coordinate alternate times.</li>
+      <ul>
+        <li> The reason will be verified with documentation and an alternate time is not automatically granted. </li>
+      </ul>
+      <li> If an exam is missed without excuse, a valid reason with documentation will be required. </li>
+      <ul>
+        <li> This is not commonly granted, but would cover ER visits, accidents, etc. </li>
+        <li> With a valid excuse, we may elect to use your Final Exam to replace your Midterm in such a case. </li>
+      </ul>
+      <li> Missing an exam without an excuse or valid reason will result in a 0 for the exam. </li>
+      <li> <b>Do not miss the Final Exam.  This requires College Dean's Approval to make-up.</b></li>
+      <li> Midterm Grades will be Posted via Gradescope and open for Grade Contesting through that Program. </li>
+    </ul>
+    <br>
+    <li><b>Contesting Exam Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to initiate a Grade Contest Request in Gradescope with a grading issue.</li>
+      <li> This lets you fill in information about the request and we can communicate directly on each contested question. </li>
+      <li>After this one week period, all exam grades will be fixed.</li>
+      <li> For the <b>Final</b>, the exam will not be returned, however, you can contact your Professor to get a summary of all missed questions, or to make an appointment to see the exam.</li>
+    </ul>
+  </ul>
+
+  <h3>Quiz Policies</h3>
+  <ul>
+    <li> There are no make-up quizzes. </li>
+    <li> Each quiz is on Blackboard and you will have <b>30 minutes</b> to complete it. </li>
+    <li> Quizzes are released Tuesdays at 6:00am and close on Thursdays at 11:59pm. </li>
+    <ul>
+      <li> You must <b>Begin</b> your quiz in this time window.  If you do not, it will be Late.</li>
+      <li> If you start your quiz on time and finish it after 11:59pm on Thursday, please let your Professor know.</li>
+      <ul> 
+        <li> This is still legal, but Blackboard marks it as Late.  Your Professor will fix it to on-time. </li>
+      </ul>
+    </ul>
+    <li> Late Quizzes will get a Zero grade. </li>
+    <li> Your <b>Lowest Two Quizzes are Dropped</b> at the end of the semester. </li>
+    <br>
+    <li><b>Contesting Quiz Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to contact your Professor with a grading issue.</li>
+      <li>After this one week period, all participaton grades will be fixed.</li>
+    </ul>
+  </ul>
+
+  <h3>Recitation Policies</h3>
+  <ul>
+    <li> There are no make-up recitations. </li>
+    <li> If you show up more than 10 minutes late or leave early, you will not earn credit for that recitation. </li>
+    <li> You may miss <b>one</b> recitation during the semester without excuse. It will be dropped at the end of the semester.</li>
+    <li> If you need to miss a recitation, contact your Professor for an excused absence. </li>
+    <ul>
+      <li> These are not commonly given for reasons other than illness. </li>
+    </ul>
+    <li> Each Worksheet/Assignment will be scored from 1-3 for your group.</li>
+    <ul>
+      <li> This is only for your feedback and has no effect on your course grade. </li>
+      <li> Only working on the recitation with your group will count for the course grade. </li>
+    </ul>
+    <li> Recitations are in Computer Lab rooms, but feel free to bring your own computer. </li>
+    <ul>
+      <li> During the Assembly Programming topics, we will be doing a lot of programming in recitations.</li>
+    </ul>
+    <br>
+    <li><b>Contesting Recitation Participation Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to contact your GTA with a grading issue.</li>
+      <li>After this one week period, all participaton grades will be fixed.</li>
+    </ul>
+  </ul>
+
+</div><div id=spacer></div>
+
+<!--[ACCOMMODATIONS]------------------------------------------------------------------------------>
+<div id=accommodations class=main>
+  <h2>Accommodations</h2>
+  <p>Disability Services provides a variety of Academic Accommodations that include Extended Time of Quizzes and Exams, Extended Project time, Reduced Distraction Environments for Exams, Additional Breaks during Tests, and other forms of support to help ensure fair access to the lectures and materials.</p>
+
+  <p>Disability Services will also work with students with temporary needs, such as following an accident or other short-term injury.  This is important, because the Accommodations will be provided for all of your classes and provide for the necessary time for your recovery as well.</p>
+
+  <h3>Disability Accommodations Policies</h3>
+  <ul>
+    <li> Please email or hand your Contact Sheet to your Professor at the beginning of the semester. </li>
+    <li> Accommodations for Test Times will use the Proctoring Center. </li>
+    <ul>
+      <li> For the Proctoring Center, please hand/email this form to your Professor for each Exam </li>
+      <li> Form: <a href="https://ds.gmu.edu/wp-content/uploads/2022/08/Test_Proctoring_Form-8.24.2022.pdf">https://ds.gmu.edu/wp-content/uploads/2022/08/Test_Proctoring_Form-8.24.2022.pdf</a>
+      <li> Your Professor will Fill out the Bottom Half and submit to Testing, then Confirm Submission with you over email.</li>
+    </ul>
+    <li> Quiz Times will be Extended in Accordance with the Contact Sheet Accommodations. </li>
+    <li> For Projects, Contact your Professor before the Original Deadline for an approved Extension.</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[ZEUS]------------------------------------------------------------------------------>
+<div id=zeus class=main>
+  <h2>Computer Accounts</h2>
+  <p>This is a <b>Systems Programming</b> class.  Unlike CS 262 or CS 222, which are general-purpose C courses for any computer system, this course is based on building programs for a specific system.  For CS 367, that system is Zeus. </p>
+
+  <p>Zeus is a Linux computer running Red Hat Enterprise Linux and is administerd by the College of Engineering and Computing for our use.  Some of our programs will involve libraries that have been pre-built on Zeus, and some programs will use system specific features that may only build properly on Zeus.</p>
+
+  <h3>Connecting to Zeus</h3>
+  <ul>
+    <li> Instructions for Zeus and for setting up the VPN: <a href="https://labs.vse.gmu.edu/index.php/Systems/Zeus">https://labs.vse.gmu.edu/index.php/Systems/Zeus</a> </li>
+  </ul>
+
+  <h3>Zeus Policies</h3>
+  <ul>
+    <li> <b>All Projects must Compile and Run on Zeus</b> </li>
+    <li> All Projects will be Tested and Graded only on Zeus.</li>
+    <ul>
+      <li> You may develop wherever and using whichever tools you like. </li>
+      <li> You will need to ensure your work builds and runs on Zeus before submission. </li>
+      <li> A project that will not compile on Zeus cannot be graded. </li>
+      <li> Remember, C has certain guarantees and others that are only 'system dependent'. It still needs to run properly on Zeus to be graded. </li>
+    </ul>
+    <li> You will need to set up the Campus VPN to access Zeus from off-campus. </li>
+  </ul>
+
+  
+</div><div id=spacer></div
+
+<!--[HONOR]------------------------------------------------------------------------------>
+<div id=honor class=main>
+  <h2>Honor Code</h2>
+  <p>The honor code at George Mason is an important part of our academic culture. A degree from this institution should be a direct measure of your own progress and abilities, and as such at all times we must ensure that all work that should be your own is your own.</p>
+
+  <p>We take the honor code quite seriously. Any attempts at copying or sharing code, algorithms, or other violations of the honor code simply will not be tolerated.</p>
+
+  <p>As seductively simple as it may seem to just copy and paste work from a friend or online source, remember that it is just as easy to compare your work electronically, and discover the similarities. We use automated software to flag suspicious cases, and then review them by hand to find the cases that must be submitted to the Office of Academic Integrity. Repeat to yourself: it's not worth trying to cheat. We will catch it, and sadly but surely, we will turn it in.</p>
+
+  <p><b>The penalty for cheating will always be far worse than a zero grade, to ensure it's not worth taking the chance.</b></p>
+  <ul>
+    <li><b>The usual recommendation is failure in the course.</b></li>
+    <li>It's a pretty sure-fire way to lose a semester and lose some implicated friends; please don't put yourself through that experience!</li>
+  </ul>
+
+  <h3><b>Honor Code Policies</b></h3>
+  <ul>
+    <li><b>You are not allowed to use code from the Internet.</b></li>
+    <ul>
+      <li>This includes Stackoverflow, Chegg, Github, ReplIt, TutorialPoint,  or any other site with code.</li>
+    </ul>
+    <li><b>You are not allowed to discuss any implementation (code) or design decisions with any other student.</b></li>
+    <ul>
+      <li>This includes prior students and students from other sections.</li>
+    </ul>
+    <li><b>You are not allowed to share or use any code from any other student (including past students)</b></li>
+    <ul>
+      <li>This includes posting your code to a public GitHub repository.</li>
+    </ul>
+  </ul>
+
+
+  <h3><b>Honor Code Responsibilities</b></h3>
+  <ul>
+    <li><b>It is your responsibility to ...</b></li>
+    <ul>
+      <li> lock your computers with a password,</li>
+      <li> not post your code to websites like Pastebin or ReplIt that are publicly accessible,</li>
+      <li> not post code to any public repositories,</li>
+      <li> (If you use services like Github/Gitlab) make sure your repo is set private.</li>
+      <li>  guard your USB drives and computers,</li>
+      <li>  not upload your files to someone else's computer, etc.</li>
+    </ul>
+    <li><b>You will be liable for any access gained to your public or unprotected code.</b></li>
+    <ul>
+      <li> If you are in a team with other students for another class, ensure CS 367 files are protected.</li>
+      <li> Make sure none of your work is possible to access by any other student.</li>
+    </ul>
+    <li><b>UTAs and GTAs are allowed to help you in your Projects!  But there are some limitations.</b></li>
+    <ul>
+      <li>TAs can help you with designing data structures, the overall algorithm used, C programming in general, and fixing any bugs.</li>
+      <li>TAs can not give you code, allow you to copy code from someone else, or help you write your code.</li>
+    </ul>
+  </ul>
+
+  <h3><b>Honor Code Links and Specifics</b></h3>
+  <ul>
+    <li><b>All Students are required to abide by GMU's Honor Code. (Student Conduct)</b></li>
+    <ul>
+      <li> Link: <a href="https://oai.gmu.edu/full-honor-code-document/">https://oai.gmu.edu/full-honor-code-document/</a></li>
+    </ul>
+    <li><b>All work must be your own.</b></li>
+    <ul>
+      <li>If we see anything we cannot explain by any other means except cheating, we are <b>required</b> to submit to the honor court.</li>
+    </ul>
+    <li> <b>CS Honor Code Policies Page:</b> <a href="https://cs.gmu.edu/resources/honor-code/">https://cs.gmu.edu/resources/honor-code/</a></li>
+    <ul>
+      <li> See these CS Honor Code Policies to understand better what constitutes cheating in the CS setting.</li>
+      <li> It clarifies some scenarios that are unique to our sorts of assignments.</li>
+    </ul>
+    <li> Here are Prof. Snyder's thoughts about the Honor Code in a CS classroom.</li>
+    <ul>
+      <li> Link: <a href="https://cs.gmu.edu/%7Emarks/honor.txt">https://cs.gmu.edu/~marks/honor.txt</a></li>
+    </ul>
+  </ul>
+
+</div><div id=spacer></div>
+
+<!--[PRIVACY]------------------------------------------------------------------------------>
+<div id=privacy class=main>
+  <h2>Privacy</h2>
+  <p>All course materials posted to Blackboard or other course site are private; by federal law, any materials that identify specific students (via their name, voice, or image) must not be shared with anyone not enrolled in this class.</p>
+
+  <p>To protect your privacy, we also cannot list your GMU email address on any public forum or provide it to any other students. You may, of course, give your email address to any other students.</p>
+
+  <p>Video recordings of class meetings that are shared only with the instructors and students officially enrolled in a class do not violate FERPA or any other privacy expectation.</p>
+  <b>Personal Privacy Statements</b>
+  <ul>
+    <li>If we ever do have to have an online session (eg. Snow Day), I will <b>Never</b> require anyone to have any cameras/webcams active.</li>
+    <li>I believe that requiring any video from you for an online lecture is an invasion of your personal privacy and of your space.</li>
+    <li>I will never require or even allow the use of any video cameras.</li>
+    <li>Others may have different policies, and that's for them to decide on the best policies for their own courses.  This is simply my own personal policy.</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[INCLUSION]------------------------------------------------------------------------------>
+<div id=inclusion class=main>
+  <h2>Inclusion</h2>
+  Every student in this class is exactly where they belong and it is our honor to welcome each of you to join us in learning throughout this semester.  Every student in this class, regardless of background, sex, gender, race, ethnicity, class, political affiliation, physical or mental ability, veteran status, nationality, or any other identity category, is an equal member of our class.<br><br>
+
+  You have the right to be called by whatever name you wish, to be referred to by whatever pronoun you identify, and to adjust these at any point.<br><br>
+
+  If you feel uncomfortable in any aspect of our instruction that results in any barrier to your inclusion in this course, please contact your professor directly.
+</div><div id=spacer></div>
+
+<!--[Disability]------------------------------------------------------------------------------>
+<div id=disability class=main>
+  <h2>Disability Services</h2>
+  Students with a disability or other condition (documented with GMU's Office of Disability Services) that may impact academic performance should speak with the professor as soon as possible to discuss appropriate accommodations.<br><br>
+
+  If you are in a situation that even <b>temporarily</b> affects your ability to learn or work, such as with a broken limb or other such injury, contact the Office of Disability Services to get accommodations.<br><br>
+
+  We are quite happy to assist as is appropriate, but it must be documented ahead of time by ODS. <br><br>
+
+  <b>Policies</b>
+  <ul>
+    <li> Bringing the paperwork with you to a scheduled exam or at the deadline for a project or an assigned quiz is far too late!</li>
+    <ul><li>Even if you don't know if you plan on utilizing the accommodations ahead of time, it's in your best interest to prepare them ahead of time.</li></ul><br>
+    <li> Policies for Extended Time on Assignments: <a href="https://ds.gmu.edu/wp-content/uploads/2020/11/Extended-Time-on-Out-of-Class-Assignments-Policy.pdf">https://ds.gmu.edu/wp-content/uploads/2020/11/Extended-Time-on-Out-of-Class-Assignments-Policy.pdf</a></li>
+    <ul>
+      <li>Extended Time does not apply if the Due Date has already passed.</li>
+      <li>Extended Time cannot go beyond the end of course date.</li>
+   </ul>
+</div><div id=spacer></div>
+
+<!--[TITLEIX]------------------------------------------------------------------------------>
+<div id=titleix class=main>
+  <h2>Sexual Harassment and Interpersonal Violence Policies</h2>
+  As a faculty member and designated "Responsible Employee," I am required to report all disclosures of sexual assault, interpersonal violence, and stalking to Mason's Title IX Coordinator per university policy 1412.<br><br>
+  
+  If you wish to speak with someone confidentially, please contact:
+  <ul>
+    <li>Student Support and Advocacy Center (703-380-1434) </li>
+    <ul><li>Link: <a href="https://ssac.gmu.edu/">https://ssac.gmu.edu/</a></li></ul>
+    <li>Counseling and Psychological Services (703-993-2380) </li>
+    <ul><li>Link: <a href="https://caps.gmu.edu/">https://caps.gmu.edu/</a></li></ul>
+    <li>Student Health Services (703-993-2831) </li>
+    <ul><li>Link: <a href="https://shs.gmu.edu/">https://shs.gmu.edu/</a></li></ul>
+    <li>Mason's Title IX Coordinator (703-993-8730; cde@gmu.edu) </li>
+    <ul><li>Link: <a href=https://diversity.gmu.edu/equity-access-services/title-ix>https://diversity.gmu.edu/equity-access-services/title-ix</a></li></ul>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[CONTACT]------------------------------------------------------------------------------>
+<div id=contact class=main>
+  <h2>Email Address and Required Subject Information</h2>
+  <b>Prof. Andrea Email: kandrea @ gmu.edu</b>
+  <ul>
+    <li>Be very careful when entering my email.  kandreas, kandrew, and other addresses are not me!</li>
+  </ul>
+  <b>Prof. Mughal Email: hmughal2 @ gmu.edu</b><br>
+
+
+  <h2>Email Policies</h2>
+  <ul>
+    <li>Put <b>[CS 367]</b> at the front of your subject so we can filter it into the right folder.</li>
+  <ul>
+    <li><b>Example Subject:</b>
+    <li><b>[CS 367] Question about my quiz 8 grade</b></li><br>
+  </ul>
+    <li><b>We can only answer emails from a GMU email account.</b></li>
+    <ul>
+      <li>We cannot respond to messages sent from or to a non-Mason email address.</li>
+    </ul>
+    <br>
+    <li><b>[Prof. Andrea] My Policy is to get a Reply back to you within the next working day.</b></li>
+    <ul>
+      <li>This means if you email at 4am on a Tuesday, I should have a reply no later than Wednesday night.</li>
+      <li>This also means if you email me at 11:58pm on Friday, I should have a reply no later than the next Monday night.</li>
+      <li>Even if my reply is just to let you know I got it, I will reply in this timeframe.</li>
+    <br>
+    <li><b>If you do NOT get a reply the next working day:</b></li>
+    <ul>
+      <li>Somehow I missed your email.  <b>Send Me a Reply to that Email to make sure I get it.</b></li>
+      <li>This is not annoying me or offending me.  If you do not get a reply by the next working day, <b>Please</b> email again so I don't miss it!</li>
+      <li>I have had a <b>lot</b> of email issues over the last year in particular.  Please, don't let anything go by without getting a reply from me.</li>
+    </ul>
+    </ul>
+    <br>
+    <li><b>[Prof. Mughal] My Policy is to get a Reply back to you within 24 hours, though it is typically much less than that.</b></li>
+    </ul>
+  </ul>
+</div><div id=spacer></div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("main").style.marginLeft = "210px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+

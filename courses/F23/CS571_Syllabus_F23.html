@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align:right;
+  background-color: #eee;
+  border-right: 5px solid #800;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #800000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffd700;
+}
+
+//.sidenav .closebtn {
+//  position: absolute;
+//  top: 0;
+//  right: 25px;
+//  font-size: 36px;
+//  margin-left: 50px;
+//}
+
+.main {
+  margin-left: 210px;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#spacer {
+  background-color: darkgreen;
+  padding: 10px;
+  border-top: 5px solid #800;
+  border-bottom: 5px solid #800;
+}
+
+table, th, td {
+  text-align: center;
+  border:1px solid black;
+  border-collapse: collapse;
+  padding-left:10px;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.la {
+  text-align: left;
+  border:1px solid black;
+}
+
+.brb {
+  border-right:3px solid black;
+}
+
+.noborder {
+  padding-left: 10px;
+  text-align: left;
+  border:none;
+}
+
+li{
+    margin: 2px 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<!--[SIDEBAR]------------------------------------------------------------------------------>
+<div id="mySidenav" class="sidenav">
+<!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+  <h3 align="left">Quick Links</h3>
+  <a href="#">Top of Syllabus</a>
+  <hr>
+  <h3 align="left">Course Info</h3>
+  <a href="#overview">Overview</a>
+  <a href="#sections">Sections</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#oh">Office Hours</a>
+  <a href="#bb">Blackboard/Piazza</a>
+  <a href="#grading">Grading</a>
+  <a href="#accommodations">Accommodations</a>
+  <a href="#zeus">Zeus Server</a>
+  <a href="#honor">Honor Code</a>
+  <hr>
+  <h3 align="left">GMU Policies</h3>
+  <a href="#privacy">Privacy</a>
+  <a href="#inclusion">Inclusion</a>
+  <a href="#disability">Disability Services</a>
+  <a href="#titleix">Title IX</a>
+  <hr>
+  <h3 align="left">Contact Info</h3>
+  <a href="#contact">Email</a>
+</div>
+
+<!--[HEAD]------------------------------------------------------------------------------>
+<div id="head" class="main">
+  <section id="top"><center><h1>Operating Systems (CS 571)<br> Syllabus - Fall 2023</h1></center></section>
+</div><div id="spacer"></div>
+
+<!--[OVERVIEW]------------------------------------------------------------------------------>
+<div id="overview" class="main">
+ <!--- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Index</span> -->
+  <h2>Course Overview</h2>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">Instructor:</td>
+      <td class="noborder">Dr. Kevin Andrea</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Course:</td>
+      <td class="noborder">CS 571</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Credits:</td>
+      <td class="noborder">3</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Repetition:</td>
+      <td class="noborder">May not be repeated for credit.  May be repeated with permission of the CS Department for any unsatisfactory grades (C+ or below) or if needed to. Satisfactory Grades are B- and above.  (see AP. 1.3.4 in the Catalog)</td>
+    </tr>
+    <tr class="noborder">
+      <th class="noborder">Modality:</td>
+      <td class="noborder">In-Person Lecture <i>(Online Lectures only in Snow Days or Campus Shutdowns)</i></td>
+    </tr>
+  </table>
+  <p><h3>Course Description:</h3> 
+  CS 571 provides an introduction to the principles of operating systems theory and practice. Fundamental concepts such as processes, synchronization, scheduling, memory management, file systems, distributed systems, and security will be presented.</p>
+  
+  <p>This course will prepare you for further courses in the Systems and Networking area, to include <b>CS 635 (Foundations of Parallel Computation)</b>, <b>CS 672 (Computer System Performance Evaluation)</b>, and <b>CS 675 (Distributed Systems)</b>, among others.</p>
+
+  <h3>Textbook</h3>
+  <p>In this class, the main resource for the material will be the lectures and slides delivered by the instructor.  There are many, many different ways to approach these topics, and each operating system (and each different version or that code) may support completely different implementations. The lectures are the primary resource for the course.</p>
+
+  <p><b>Required Textbook:</b> "Operating Systems: Three Easy Pieces" (Online Book, Arpaci-Dusseau Books) by R.H. Arpaci-Dusseau and A.C. Arpaci-Dusseau.<p>
+  <ul>
+    <li>Available Online for Free: <a href=http://pages.cs.wisc.edu/~Eremzi/OSTEP/>http://pages.cs.wisc.edu/~Eremzi/OSTEP/</a></p></li>
+  </ul>
+  <p><b>Recommended Textbook:</b> "The C Programming Language", 2nd ed. by Brian Kernighan and Dennis Ritchie, Prentice Hall, 1988.
+  <ul>
+    <li>All programming in this course will be done in the C programming language.  This book provides a good reference for C that may be helpful during the course.</li>
+  </ul>
+  <p><b>Additional Resources:</b> The following older textbooks also are good resources.  These are not required, but if you would like additional references that cover the same topics, a recent edition of any of the following books will present in-depth discussions on the core topics.
+  <ul>
+    <li>Operating System Concepts by Silberschatz, Galvin and Gagne (John Wiley & Sons) </li>
+    <li>Operating Systems - Principles and Practice (2nd Edition, Recursive Books) by Anderson and Dahlin </li>
+    <li>Modern Operating Systems (Pearson) by A. S. Tanenbaum </li>
+  </ul>
+
+  <h3>Recommended Prerequisites</h3>
+  <p>These are recommended prerequisites for this course.  <b>This course assumes you are comfortable with programming in C as a strong requirement.</b>  All programming assignments will be programmed in C and you will need to be able to read and assess existing C code as the starting point for your programming assignments.</p>
+  <ul>
+    <li>Grade of C or better in an Undergraduate Data Structures Course, <b>AND</b>
+    <li>Grade of C or better in an Undergraduate Systems Programming Course, <b>AND</b>
+    <li>Grade of C or better in an Undergraduate C Programming Course
+  </ul>
+
+  <h3>Topics for this Semester Will Include:</h3>
+  <ul>
+    <li>Operating System Fundamentals</li>
+    <li>Processes</li>
+    <li>Concurrency and Synchronization</li>
+    <li>CPU Scheduling</li>
+    <li>Memory Management and Virtual Memory</li>
+    <li>File and Storage Systems</li>
+    <li>Distributed Systems</li>
+    <li>Security</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[SECTIONS]------------------------------------------------------------------------------>
+<div id=sections class=main>
+  <h2>Sections</h2>
+  All sections are taught in-person.<br><br>
+  <table style="width:50%">
+    <tr>
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>Th 4:30pm - 7:10pm</td>
+      <td>Art and Design Building (AB) 2003</td>
+    </tr>
+  </table>
+  <br>
+</div><div id=spacer></div>
+
+<!--[SCHEDULE]------------------------------------------------------------------------------>
+<div id=schedule class=main>
+  <h2>Schedule</h2>
+  <b>Planned Schedule: <a href="https://cs.gmu.edu/~kandrea/F23/CS571_Schedule_F23.html">https://cs.gmu.edu/~kandrea/F23/CS571_Schedule_F23.html</a></b><br><br>
+  <b>Timeline Version of Schedule: <a href="https://cs.gmu.edu/~kandrea/F23/CS571_Timeline_F23.html">https://cs.gmu.edu/~kandrea/F23/CS571_Timeline_F23.html</a></b>
+  <ul>
+    <li>The planned course schedule is also found on Blackboard under Schedule</li>
+  </ul>
+</div><div id=spacer></div
+
+<!--[OH]------------------------------------------------------------------------------>
+<div id=oh class=main>
+  <h2>Office Hours</h2>
+
+  <h3>Office Hours Policies</h3>
+  <ul>
+    <li> <b>For Programming Assignment Questions and Programming Assignment Grading</b> see the GTA Office Hours and Piazza.</li>
+    <li> <b>For Homework Grading or Exam Grading Questions</b> See Prof. Andrea's Office Hours.</li>
+    <li> <b>For Questions on Topics and Material</b> please stop by for any Office Hours.</li>
+  </ul>
+
+  <h3>Office Hours Locations and Maps</h3>
+  <h4>Professor's Office Hours (For Lecture Topics, Homework and Exam Assistance and Grading)</h4>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">Professor</th>
+      <th class="noborder">Times</th>
+      <th class="noborder">Map</th>
+    </tr>
+    <tr>
+      <td class="noborder">Prof. Andrea</td>
+      <td class="noborder">Thursdays from 3:00pm - 4:00pm</td>
+      <td class="noborder">Map Link: <a href="https://cs.gmu.edu/~kandrea/Andrea_oh.png">Buchanan Hall D217C in the CS Office on the Second Floor.</a></td>
+    </tr>
+  </table>
+
+  <h4>GTA Office Hours (For Programming Assignment Assistance and Grading)</h4>
+  <table class="noborder">
+    <tr class="noborder">
+      <th class="noborder">GTA</th>
+      <th class="noborder">Times</th>
+      <th class="noborder">Map</th>
+    </tr>
+    <tr>
+      <td class="noborder">Mohammad Shaik Shareef </td>
+      <td class="noborder">4:00pm - 5:00pm</td>
+      <td class="noborder">Engineering 4456</td>
+    </tr>
+    <tr>
+      <td class="noborder">Trent Zakielarz</td>
+      <td class="noborder">4:00pm - 5:00pm</td>
+      <td class="noborder">Buchanan Hall D215/D217 (Desk D10)</td>
+    </tr>
+  </table>
+
+</div><div id=spacer></div
+
+<!--[BB]------------------------------------------------------------------------------>
+<div id=bb class=main>
+  <h2>Blackboard and Piazza</h2>
+
+  <h3>Blackboard</h3>
+
+  <p>Blackboard Link: <a href="https://mymasonportal.gmu.edu">https://mymasonportal.gmu.edu</a></p>
+
+  <p><b>CS 571 Blackboard Page</b></p>
+  <ul>
+    <li> Contains all Lecture Slides, Livecode, Programming Assignment Assignments, Homeworks, Course Grades</li>
+    <li> All Programming Assignments are Posted here and are Submitted here.</li>
+    <li> All Homeworks will be done online through with Gradescope.
+    <ul>
+      <li>The link to access homeworks and all homework grades will be on Blackboard.</li>
+    </ul>
+  </ul>
+
+  <h3>Piazza</h3>
+  This term we will be using the Piazza discussion board for <b>programming assignment discussions only.</b>
+  <ul>
+    <li>For security, you will be added to the Piazza board by your Professor manually.</li>
+    <ul>
+      <li>Once the semester begins on August 21st, if you do not have access to our Piazza board, please email Prof. Andrea.</li>
+    </ul>
+  </ul>
+
+  <p>Piazza Link: <b>To Be Announced</b>
+
+  <h3>Piazza Policies</h3>
+  <ul>
+    <li><b>Piazza is only for Programming Assignment-related Questions</b></li>
+    <ul>
+      <li>The GTAs are the programming assignment managers for this semester.</li>
+      <li>All of the Operating System GTAs work together on Piazza to provide answers to questions.</li>
+      <li>All questions you ask will be Private only, but all GTAs are able to read and respond to the.</li>
+      <li>Make sure you can access Piazza before the first Programming Assignment!</li>
+    </ul>
+    <li><b>Piazza is the best place for Programming Assignment related questions</b></li>
+      <ul>
+        <li>Make sure to provide information about what debugging steps you've already taken to narrow the problem down.</li>
+        <li>Please do not post cell phone photos of your code.  You can copy and paste into Piazza, which does have Syntax Highlighting</li>
+      </ul>
+    <li><b>Do not ask any questions about other topics or any grading on Piazza</b></li>
+    <ul>
+      <li>If you have any questions about course topics unrelated to the programming assignment, or about any grading questions, please feel free to come in to either the Professor or to our GTA office hours.</li>
+    </ul>
+    <li><b>Do not post any questions about Homeworks on Piazza.  Piazza is for Programming Assignments only.</b></li>
+  </ul>
+
+
+</div><div id=spacer></div
+
+<!--[GRADING]------------------------------------------------------------------------------>
+<div id=grading class=main>
+  <h2>Grading</h2>
+  <p>The course will have two midterms and a final. Much of the work during the semester will be completing programming assignments, as well as regular homework activities.</p>
+
+  <p><b>In general, all grades should be available about two weeks after submission.</b></p>
+
+  <h3>Semester Grades</h3>
+  <table style="width:80%">
+    <tr>
+      <th>Category</th>
+      <th>Grade %</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>Programming Assignments</td>
+      <td>30%</td>
+      <td class="la">PA0 - PA2 are each weighted differently</td>
+    </tr>
+    <tr>
+      <td>Homeworks</td>
+      <td>15%</td>
+      <td class="la">Approximately 6 homework assignments</td>
+    </tr>
+    <tr>
+      <td>Midterms</td>
+      <td>15% Each<br>(30% Total)</td>
+      <td class="la">No Replacement Policies</td>
+    </tr>
+    <tr>
+      <td>Final</td>
+      <td>25%</td>
+      <td class="la">Cumulative</td>
+    </tr>
+  </table>
+
+  <h3>Grading Scale</h3>
+  <p>For Graduate Courses, a <b>B-</b> or higher is a Satisfactory Grade.</p>
+  <p>If you earn below a B-, you will need to repeat the course.</p>
+  <table style="width:50%">
+    <tr>
+      <th>Grade</th>
+      <th class="brb">Cut-Off</th>
+      <th>Grade</th>
+      <th class="brb">Cut-Off</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td class="brb">&ge; 90%</td>
+      <td>B</td>
+      <td class="brb">&ge; 75%</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td class="brb">&ge; 65%</td>
+      <td>F</td>
+      <td class="brb">&lt; 65%</td>
+    </tr>
+  </table>
+  <h3>Grade Contesting</h3>
+  <ul>
+    <li> For Exams and Homework Assignments: Contact Professor Andrea </li>
+    <li> For Programming Assignments: Contact Your Grader GTA </li>
+    <ul>
+      <li> If you are unable to come to a resolution with your GTA, please contact your Professor.</li>
+    </ul>
+  </ul>
+
+  <h3>Grading Policies</h3>
+  <ul>
+    <li> There are no make-up programming assignments, homeworks, or exams. </li>
+    <li> There are no additional extra-credit assignments. </li>
+    <li> There are no late-tokens for programming assignments. </li>
+    <li> There is no course-long curve at the end of the semester. </li>
+  </ul>
+
+  <h3>Programming Assignment Policies</h3>
+  <ul>
+    <li>Blackboard Submission must be made by the <b>Programming Assignment Due Date</b></li>
+    <ul>
+      <li><b>Each Programming Assignment lists any Late Policies or Penalties on the Programming Assignment Itself.</b>
+      <ul>
+        <li><b>Any Programming Assignment submitted after the final deadline for late submissions will receive a zero on the assignment.</b></li>
+      </ul>
+      <li>Your code must compile and run on the Zeus server to be graded.</li>
+      <ul>
+        </li>Zeus is the official server on which OS/161 will be run.</li>
+      </ul>
+      <li>Check your submission to make sure it is the correct tar file!</li>
+      <ul>
+        <li>Turning in the wrong files will result in a <b>zero</b>.</li>
+      </ul>
+      <li>Back up your work!
+      <ul>
+        <li>Catastrophic computer/file failure or corruption will not be cause for an extension.</li>
+        <li>Do not put your code in any public repository where others can find it.</li>
+        <li>You may use private repositories (the course GitLab server is the offical repository for your work.).</li>
+      </ul>
+    </ul>
+    <br>
+    <li><b>Programming Assignments take significantly longer than other courses:</b></li>
+    <ul>
+      <li>You will be working on an OS Kernel.  There will be hundreds of source files.</li>
+      <li>You will be designing and implementing new OS features for the Kernel.</li>
+      <li>You will be designing and implementing applications to use your new OS features.</li><br>
+      <li><b>Start your Programming Assignments early.  You will need extra time for design!</b></li>
+      <ul>
+        <li>You will need time to read and trace the existing code, design your solution, implement your solution, and test your solution.</li>
+        <ul>
+          <li><b>Test cases will not be provided.</b></li>
+        </ul>
+        <li>There is a significant design and code reading component to these programming assignments.</li>
+    </ul>
+    <br>
+    <li><b>Submitting a Programming Assignment:</b></li>
+    <ul>
+      <li>Each Project will contain detailed submission instructions.</li>
+      <li>Do not wait until the last minute as submission may take extra time at deadlines due to server loads.</li>
+    </ul>
+    <br>
+    <li><b>Late Work:</b></li>
+    <ul>
+      <li>Late submission policies are specified on each Programming Assignment directly.</li>
+      <li>No submission will be accepted after the listed deadline for late submissions.</li>
+      <li>Accommodations will extend the original deadline and allow for late submissions following this.</li>
+      <ul>
+        <li>If you have pre-approved accommodations, you must contact Prof. Andrea prior to any deadlines.</li>
+      </ul>
+    </ul>
+    <br>
+    <li><b>Contesting Programming Assignment Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to contact your grader GTA with a grading issue.</li>
+      <li>After this one week period, all grades will be fixed.</li>
+    </ul>
+  </ul>
+
+  <h3>Exam Policies</h3>
+  <ul>
+    <li> There are no make-up exams. </li>
+    <li> There are no drops or replacements for exams. </li>
+    <li> Exams are in-person using pencil and paper. </li>
+    <ul>
+      <li> In general, no computers, cell phones, books, calculators, or other such resources are allowed.
+      <li> You can bring in one page (8.5"x11" US Letter) with handwritten notes (both sides of the paper are allowed) for each exam. </li>
+    </ul>
+    <br>
+    <li> <b> Missing an Exam: </b></li>
+    <ul>
+      <li> If you will miss an exam, let your Professor know immediately and we can coordinate alternate times.</li>
+      <ul>
+        <li> The reason will be verified with documentation and an alternate time is not automatically granted. </li>
+      </ul>
+      <li> If an exam is missed without excuse, a valid reason with documentation will be required. </li>
+      <ul>
+        <li> This is not commonly granted, but would cover ER visits, accidents, etc. </li>
+        <li> With a valid excuse, we may elect to use your Final Exam to replace your Midterm in such a case. </li>
+      </ul>
+      <li> Missing an exam without an excuse or valid reason will result in a 0 for the exam. </li>
+      <li> <b>Do not miss the Final Exam.  This requires College Dean's Approval to make-up.</b></li>
+      <li> Midterm Grades will be Posted via Gradescope and open for Grade Contesting through that Program. </li>
+    </ul>
+    <br>
+    <li><b>Contesting Exam Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to initiate a Grade Contest Request in Gradescope with a grading issue.</li>
+      <li> This lets you fill in information about the request and we can communicate directly on each contested question. </li>
+      <li>After this one week period, all exam grades will be fixed.</li>
+      <li> For the <b>Final</b>, the exam will not be returned, however, you can contact your Professor to get a summary of all missed questions, or to make an appointment to see the exam.</li>
+    </ul>
+  </ul>
+
+  <h3>Homework Policies</h3>
+  <ul>
+    <li> There are no make-up homework assignments. </li>
+    <li> Each homework will be linked on Blackboard, but will be provided online via Gradescope.</li>
+    <li> Homework assignments are generally assigned following a major topic in the course.</li>
+    <li> You will generally have one week to complete and submit the homework assignment.<li>
+    <ul> 
+      <li> Submission is done on Gradescope with a button at the bottom of the page.</li>
+      <li> Only the last submission before the deadline will be seen.</li>
+      <ul>
+        <li> Submission is how Gradescope saves progress.</li>
+        <li> Please submit often to make sure your work is saved.</li>
+        <li> There is no additional submission needed.  We grade the last submitted copy from Gradescope directly.</li>
+      </ul>
+    </ul>
+    <li> Homework Assignments submitted after the deadline will get a Zero grade. </li>
+    <li> <b>No Homework Assignment is Dropped, and No make-up assignments are provided.</b></li>
+    <br>
+    <li><b>Contesting Homework Grades:</b></li>
+    <ul>
+      <li>You have <b>One Week After Grades are Released</b> to contact your Professor with a grading issue.</li>
+      <ul>
+        <li>Please use the "Contest Grade" feature in Gradescope.</li>
+        <li>This alerts me to the question and allows you to enter a statement for me to read on the question itself.</li>
+      </ul>
+      <li>After this one week period, all homework grades will be fixed.</li>
+    </ul>
+  </ul>
+
+</div><div id=spacer></div>
+
+<!--[ACCOMMODATIONS]------------------------------------------------------------------------------>
+<div id=accommodations class=main>
+  <h2>Accommodations</h2>
+  <p>Disability Services provides a variety of Academic Accommodations that include Extended Time of Homeworks and Exams, Extended Programming Assignment time, Reduced Distraction Environments for Exams, Additional Breaks during Tests, and other forms of support to help ensure fair access to the lectures and materials.</p>
+
+  <p>Disability Services will also work with students with temporary needs, such as following an accident or other short-term injury.  This is important, because the Accommodations will be provided for all of your classes and provide for the necessary time for your recovery as well.</p>
+
+  <h3>Disability Accommodations Policies</h3>
+  <ul>
+    <li> Please email or hand your Contact Sheet to your Professor at the beginning of the semester. </li>
+    <li> Accommodations for Test Times will use the Proctoring Center. </li>
+    <ul>
+      <li> For the Proctoring Center, please hand/email this form to your Professor for each Exam </li>
+      <li> Form: <a href="https://ds.gmu.edu/wp-content/uploads/2022/08/Test_Proctoring_Form-8.24.2022.pdf">https://ds.gmu.edu/wp-content/uploads/2022/08/Test_Proctoring_Form-8.24.2022.pdf</a>
+      <li> Your Professor will Fill out the Bottom Half and submit to Testing, then Confirm Submission with you over email.</li>
+    </ul>
+    <li> Homework Times will be Extended in Accordance with the Contact Sheet Accommodations. </li>
+    <li> For Programming Assignments, Contact your Professor before the Original Deadline for an approved Extension.</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[ZEUS]------------------------------------------------------------------------------>
+<div id=zeus class=main>
+  <h2>Computer Accounts</h2>
+  <p>This is a <b>Systems Programming</b> class.  Unlike a general-purpose C courses for any computer system, this course is based on building programs for a specific system.  For CS 571, that system is an emulated server that is running Zeus. </p>
+
+  <p>Zeus is a Linux computer running Red Hat Enterprise Linux and is administerd by the College of Engineering and Computing for our use.  Some of our programs will involve libraries that have been pre-built on Zeus, and some programs will use system specific features that may only build properly on Zeus.</p>
+
+  <h3>Connecting to Zeus</h3>
+  <ul>
+    <li> Instructions for Zeus and for setting up the VPN: <a href="https://labs.vse.gmu.edu/index.php/Systems/Zeus">https://labs.vse.gmu.edu/index.php/Systems/Zeus</a> </li>
+  </ul>
+
+  <h3>Zeus Policies</h3>
+  <ul>
+    <li> <b>All Programming Assignments must Compile and Run on Zeus</b> </li>
+    <li> All Programming Assignments will be Tested and Graded only on Zeus.</li>
+    <ul>
+      <li> You may develop wherever and using whichever tools you like. </li>
+      <li> You will need to ensure your work builds and runs on Zeus before submission. </li>
+      <li> A programming assignment that will not compile on Zeus cannot be graded. </li>
+      <li> Remember, C has certain guarantees and others that are only 'system dependent'. It still needs to run properly on Zeus to be graded. </li>
+    </ul>
+    <li> You will need to set up the Campus VPN to access Zeus from off-campus. </li>
+  </ul>
+
+  
+</div><div id=spacer></div
+
+<!--[HONOR]------------------------------------------------------------------------------>
+<div id=honor class=main>
+  <h2>Honor Code</h2>
+  <p>The honor code at George Mason is an important part of our academic culture. A degree from this institution should be a direct measure of your own progress and abilities, and as such at all times we must ensure that all work that should be your own is your own.</p>
+
+  <p>We take the honor code quite seriously. Any attempts at copying or sharing code, algorithms, or other violations of the honor code simply will not be tolerated.</p>
+
+  <p>As seductively simple as it may seem to just copy and paste work from a friend or online source, remember that it is just as easy to compare your work electronically, and discover the similarities. We use automated software to flag suspicious cases, and then review them by hand to find the cases that must be submitted to the Office of Academic Integrity. Repeat to yourself: it's not worth trying to cheat. We will catch it, and sadly but surely, we will turn it in.</p>
+
+  <p><b>The penalty for cheating will always be far worse than a zero grade, to ensure it's not worth taking the chance.</b></p>
+  <ul>
+    <li><b>The usual recommendation is failure in the course.</b></li>
+    <li>It's a pretty sure-fire way to lose a semester and lose some implicated friends; please don't put yourself through that experience!</li>
+  </ul>
+
+  <h3><b>Honor Code Policies</b></h3>
+  <ul>
+    <li><b>You are not allowed to use code from the Internet.</b></li>
+    <ul>
+      <li>This includes Stackoverflow, Chegg, Github, ReplIt, TutorialPoint,  or any other site with code.</li>
+    </ul>
+    <li><b>You are not allowed to discuss any implementation (code) or design decisions with any other student.</b></li>
+    <ul>
+      <li>This includes prior students and students from other sections.</li>
+    </ul>
+    <li><b>You are not allowed to share or use any code from any other student (including past students)</b></li>
+    <ul>
+      <li>This includes posting your code to a public GitHub repository.</li>
+    </ul>
+  </ul>
+
+
+  <h3><b>Honor Code Responsibilities</b></h3>
+  <ul>
+    <li><b>It is your responsibility to ...</b></li>
+    <ul>
+      <li> lock your computers with a password,</li>
+      <li> not post your code to websites like Pastebin or ReplIt that are publicly accessible,</li>
+      <li> not post code to any public repositories,</li>
+      <li> (If you use services like Github/Gitlab) make sure your repo is set private.</li>
+      <li>  guard your USB drives and computers,</li>
+      <li>  not upload your files to someone else's computer, etc.</li>
+    </ul>
+    <li><b>You will be liable for any access gained to your public or unprotected code.</b></li>
+    <ul>
+      <li> If you are in a team with other students for another class, ensure CS 571 files are protected.</li>
+      <li> Make sure none of your work is possible to access by any other student.</li>
+    </ul>
+    <li><b>GTAs are allowed to help you in your Programming Assignments!  But there are some limitations.</b></li>
+    <ul>
+      <li>TAs can help you with designing data structures, the overall algorithm used, C programming in general, and fixing any bugs.</li>
+      <li>TAs can not give you code, allow you to copy code from someone else, or help you write your code.</li>
+    </ul>
+  </ul>
+
+  <h3><b>Honor Code Links and Specifics</b></h3>
+  <ul>
+    <li><b>All Students are required to abide by GMU's Honor Code. (Student Conduct)</b></li>
+    <ul>
+      <li> Link: <a href="https://oai.gmu.edu/full-honor-code-document/">https://oai.gmu.edu/full-honor-code-document/</a></li>
+    </ul>
+    <li><b>All work must be your own.</b></li>
+    <ul>
+      <li>If we see anything we cannot explain by any other means except cheating, we are <b>required</b> to submit to the honor court.</li>
+    </ul>
+    <li> <b>CS Honor Code Policies Page:</b> <a href="https://cs.gmu.edu/resources/honor-code/">https://cs.gmu.edu/resources/honor-code/</a></li>
+    <ul>
+      <li> See these CS Honor Code Policies to understand better what constitutes cheating in the CS setting.</li>
+      <li> It clarifies some scenarios that are unique to our sorts of assignments.</li>
+    </ul>
+    <li> Here are Prof. Snyder's thoughts about the Honor Code in a CS classroom.</li>
+    <ul>
+      <li> Link: <a href="https://cs.gmu.edu/%7Emarks/honor.txt">https://cs.gmu.edu/~marks/honor.txt</a></li>
+    </ul>
+  </ul>
+
+</div><div id=spacer></div>
+
+<!--[PRIVACY]------------------------------------------------------------------------------>
+<div id=privacy class=main>
+  <h2>Privacy</h2>
+  <p>All course materials posted to Blackboard or other course site are private; by federal law, any materials that identify specific students (via their name, voice, or image) must not be shared with anyone not enrolled in this class.</p>
+
+  <p>To protect your privacy, we also cannot list your GMU email address on any public forum or provide it to any other students. You may, of course, give your email address to any other students.</p>
+
+  <p>Video recordings of class meetings that are shared only with the instructors and students officially enrolled in a class do not violate FERPA or any other privacy expectation.</p>
+  <b>Personal Privacy Statements</b>
+  <ul>
+    <li>If we ever do have to have an online session (eg. Snow Day), I will <b>Never</b> require anyone to have any cameras/webcams active.</li>
+    <li>I believe that requiring any video from you for an online lecture is an invasion of your personal privacy and of your space.</li>
+    <li>I will never require or even allow the use of any video cameras.</li>
+    <li>Others may have different policies, and that's for them to decide on the best policies for their own courses.  This is simply my own personal policy.</li>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[INCLUSION]------------------------------------------------------------------------------>
+<div id=inclusion class=main>
+  <h2>Inclusion</h2>
+  Every student in this class is exactly where they belong and it is our honor to welcome each of you to join us in learning throughout this semester.  Every student in this class, regardless of background, sex, gender, race, ethnicity, class, political affiliation, physical or mental ability, veteran status, nationality, or any other identity category, is an equal member of our class.<br><br>
+
+  You have the right to be called by whatever name you wish, to be referred to by whatever pronoun you identify, and to adjust these at any point.<br><br>
+
+  If you feel uncomfortable in any aspect of our instruction that results in any barrier to your inclusion in this course, please contact your professor directly.
+</div><div id=spacer></div>
+
+<!--[Disability]------------------------------------------------------------------------------>
+<div id=disability class=main>
+  <h2>Disability Services</h2>
+  Students with a disability or other condition (documented with GMU's Office of Disability Services) that may impact academic performance should speak with the professor as soon as possible to discuss appropriate accommodations.<br><br>
+
+  If you are in a situation that even <b>temporarily</b> affects your ability to learn or work, such as with a broken limb or other such injury, contact the Office of Disability Services to get accommodations.<br><br>
+
+  We are quite happy to assist as is appropriate, but it must be documented ahead of time by ODS. <br><br>
+
+  <b>Policies</b>
+  <ul>
+    <li> Bringing the paperwork with you to a scheduled exam or at the deadline for a programming assignment or an assigned homework is far too late!</li>
+    <ul><li>Even if you don't know if you plan on utilizing the accommodations ahead of time, it's in your best interest to prepare them ahead of time.</li></ul><br>
+    <li> Policies for Extended Time on Assignments: <a href="https://ds.gmu.edu/wp-content/uploads/2020/11/Extended-Time-on-Out-of-Class-Assignments-Policy.pdf">https://ds.gmu.edu/wp-content/uploads/2020/11/Extended-Time-on-Out-of-Class-Assignments-Policy.pdf</a></li>
+    <ul>
+      <li>Extended Time does not apply if the Due Date has already passed.</li>
+      <li>Extended Time cannot go beyond the end of course date.</li>
+   </ul>
+</div><div id=spacer></div>
+
+<!--[TITLEIX]------------------------------------------------------------------------------>
+<div id=titleix class=main>
+  <h2>Sexual Harassment and Interpersonal Violence Policies</h2>
+  As a faculty member and designated "Responsible Employee," I am required to report all disclosures of sexual assault, interpersonal violence, and stalking to Mason's Title IX Coordinator per university policy 1412.<br><br>
+  
+  If you wish to speak with someone confidentially, please contact:
+  <ul>
+    <li>Student Support and Advocacy Center (703-380-1434) </li>
+    <ul><li>Link: <a href="https://ssac.gmu.edu/">https://ssac.gmu.edu/</a></li></ul>
+    <li>Counseling and Psychological Services (703-993-2380) </li>
+    <ul><li>Link: <a href="https://caps.gmu.edu/">https://caps.gmu.edu/</a></li></ul>
+    <li>Student Health Services (703-993-2831) </li>
+    <ul><li>Link: <a href="https://shs.gmu.edu/">https://shs.gmu.edu/</a></li></ul>
+    <li>Mason's Title IX Coordinator (703-993-8730; cde@gmu.edu) </li>
+    <ul><li>Link: <a href=https://diversity.gmu.edu/equity-access-services/title-ix>https://diversity.gmu.edu/equity-access-services/title-ix</a></li></ul>
+  </ul>
+</div><div id=spacer></div>
+
+<!--[CONTACT]------------------------------------------------------------------------------>
+<div id=contact class=main>
+  <h2>Email Address and Required Subject Information</h2>
+  <b>Prof. Andrea Email: kandrea @ gmu.edu</b>
+  <ul>
+    <li>Be very careful when entering my email.  kandreas, kandrew, and other addresses are not me!</li>
+  </ul>
+  <p>Put <b>[CS 571]</b> at the front of your subject so we can filter it into the right folder.</p>
+  <p><b>Example Subject:</b></p>
+  <ul>
+    <li><b>[CS 571] Question about my midterm grade</b></li>
+  </ul>
+
+
+  <h2>Email Policies</h2>
+  <ul>
+    <li><b>We can only answer emails from a GMU email account.</b></li>
+    <ul>
+      <li>We cannot respond to messages sent from or to a non-Mason email address.</li>
+    </ul>
+    <br>
+    <li><b>My Policy is to get a Reply back to you within the next working day.</b></li>
+    <ul>
+      <li>This means if you email at 4am on a Tuesday, I should have a reply no later than Wednesday night.</li>
+      <li>This also means if you email me at 11:58pm on Friday, I should have a reply no later than the next Monday night.</li>
+      <li>Even if my reply is just to let you know I got it, I will reply in this timeframe.</li>
+    <br>
+    <li><b>If you do NOT get a reply the next working day:</b></li>
+    <ul>
+      <li>Somehow I missed your email.  <b>Send Me a Reply to that Email to make sure I get it.</b></li>
+      <li>This is not annoying me or offending me.  If you do not get a reply by the next working day, <b>Please</b> email again so I don't miss it!</li>
+      <li>I have had a <b>lot</b> of email issues over the last year in particular.  Please, don't let anything go by without getting a reply from me.</li>
+    </ul>
+    </ul>
+    <br>
+  </ul>
+</div><div id=spacer></div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("main").style.marginLeft = "210px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+

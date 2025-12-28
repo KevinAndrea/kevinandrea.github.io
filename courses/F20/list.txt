@@ -1,0 +1,100 @@
+%
+% CS471
+%
+[CS471] Week 15: Record L8 Topic Videos (Security) %100
+[CS471] Week 15: Post L8 Slides (Security) %100
+[CS471] Week 15: Record L7 Topic Videos (File Systems) %100
+[CS471] Week 15: Post L7 Slides (File Systems) %100
+[CS471] Week 14: Record L6 Topic Videos (Virtual Memory) %100
+[CS471] Week 14: Post L6 Slides (Virtual Memory) %100
+[CS471] Write Final Exam %100
+[CS471] Grade Midterm 2 (Currently doing by-question Analysis) %100
+[CS471] Midterm 2 Solutions Video Post: %100
+[CS471] Midterm 1 Solutions Video Post: %100
+[CS471] Write Homework 6: %100
+[CS471] Grade Homework 5: %100
+[CS471] Write Homework 5: %100
+[CS471] Grade Homework 4: %100
+[CS471] Grade Homework 3: %100
+[CS471] Update Calendar 1 20201012 %100
+[CS471] Write Homework 3 for Gradescope %100
+[CS471] Grade Midterm %100
+[CS471] Write Midterm %100
+[CS471] Update Calendar - Change Break to Nov 3 %100
+[CS471] Record Missing Video (Live Code 1+2) %100
+[CS471] Record Livestream Shell Programming %60
+[CS471] Piazza Upgrade %100
+[CS471] Project 1: Post %100
+[CS471] Homework 2: Grading %100
+[CS471] Homework 2: Post Solution Document (Q11-14) %100
+[CS471] Homework 2: Post Solution Video %100
+[CS471] Homework 2: Write %100
+[CS471] Homework 1: Post Solution Video %100
+[CS471] Homework 1: Grading %100
+[CS471] Week8: Post L4 Slides (Scheduling) %100
+[CS471] Week8: Record L4 Topic Videos %100
+[CS471] Week6: Post L4 Slides (Scheduling) %100
+[CS471] Week6: Record L4 Topic Videos %100
+[CS471] Week5: Record L3 Topic Videos (All of them!) %100
+[CS471] Week6: Publish Livecode %100
+[CS471] Week5: Post L3 Slides (Synchronization) %100
+[CS471] Week5: Record L3 Topic Videos (Remainder through Week 5) %100
+[CS471] Week5: Publish Livecode %100
+[CS471] Week4: Post L3 Slides (Synchronization) %100
+[CS471] Week4: Record L3 Topic Videos (Done through Week 4) %100
+[CS471] Week4: Publish Livecode %100
+[CS471] Prep Homework 1 %100
+[CS471] Release Homework 1 %100
+[CS471] Begin CS471 Task Listing (Sep 13) %100
+%
+% CS367
+%
+[CS367] Update Calendar - 20201012 %100
+[CS367] Write Final: %100
+[CS367] Quiz 12: Post %100
+[CS367] Week 15: Post Slides (Dynamic Memory) %100
+[CS367] Week 15: Post Videos (Dynamic Memory) %100
+[CS367] Week 14: Post Slides (Virtual Memory) %100
+[CS367] Week 14: Post Videos (Virtual Memory) %100
+[CS367] Sample Questions/Answers for Lecture 5-13 %100
+[CS367] Grade Midterm %100
+[CS367] Update Calendar - Change Break to Nov 3 %100
+[CS367] Finalize Test Cases for Project 0 %100
+[CS367] Prepare Quiz on Control Flow %100
+[CS367] Prepare Quiz on Floating Point %100
+[CS367] Prepare Quiz on Basic Assembly %100
+[CS367] Write Midterm %100
+[CS367] Sample Questions/Answers for Lecture 5 %100
+[CS367] Post Sample Midterm ANSWERS %100
+[CS367] Update Sample Midterm for Lecture 4 %100
+[CS367] Update Sample Midterm for Lecture 3 %100
+[CS367] Update Sample Midterm for Lecture 2 (except Arithmetic) %100
+[CS367] Week 10: Post Quiz on Data Structures %100
+[CS367] Week 10: Post L9 Videos %100
+[CS367] Week 10: Post L9 Livecode %100
+[CS367] Week 10: Post L9 Slides (Unix I/O) %100
+[CS367] Week 10: Post L8 Videos %100
+[CS367] Week 10: Post L8 Livecode %100
+[CS367] Week 10: Post L8 Slides (Signals) %100
+[CS367] Week 9: Post Quiz on Data Structures %100
+[CS367] Week 9: Post L7 Videos %100
+[CS367] Week 9: Post L7 Livecode %100
+[CS367] Week 9: Post L7 Slides (Processes) %100
+[CS367] Week 8: Post L6 Videos %100
+[CS367] Week 8: Post L6 Slides (Assembly Data Structures) %100
+[CS367] Week 8: Post L6 Worksheet %100
+[CS367] Week 7: Post L5 Slides (Assembly Procedures) %100
+[CS367] Week 7: Post L5 Videos %100
+[CS367] Week 6: Post L5 Slides (Assembly Procedures) %100
+[CS367] Week 6: Post L5 Videos %100
+[CS367] Week 5: Post L4 Worksheet Answers %100
+[CS367] Week 5: Post L4 Slides (Assembly Control Flow) %100
+[CS367] Week 5: Post L4 Worksheet %100
+[CS367] Week 4: Post L4 Videos %100
+[CS367] Week 4: Post L3 Slides (Assembly Expressions) %100
+[CS367] Week 4: Post L3 Worksheet %100
+[CS367] Week 4: Post L3 Worksheet Answers %100
+[CS367] Week 4: Post L3 Videos %100
+[CS367] Week 4: Prepare Project 1 %100
+[CS367] Week 3: Post L2 Worksheet Answers %100
+[CS367] Begin CS367 Task Listing (Sep 13) %100

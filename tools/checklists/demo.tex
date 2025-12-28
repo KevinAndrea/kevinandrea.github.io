@@ -1,0 +1,59 @@
+\documentclass{article}
+  \usepackage{typed-checklist}
+  
+  \begin{document}
+    \begin{CheckList}{Goal}
+%      \Goal{open}{I have a trendy haircut}
+%      \begin{CheckList}{Task}
+%        \Task{done}{find a hairdresser}
+%        \Task{started}{make an appointment}
+%        \Task{open}{go to the hairdresser}
+%      \end{CheckList}
+      \Goal{achieved}{I have a typed checklist}
+    \end{CheckList}
+
+\paragraph{Goals}
+\begin{CheckList}{Goal}
+\Goal{open}{open goal}
+\Goal{dropped}{dropped goal}
+\Goal{unclear}{unclear goal}
+\Goal{achieved}{achieved goal}
+\end{CheckList}
+\paragraph{Tasks}
+\begin{CheckList}{Task}
+\Task{open}{open task}
+\Task{dropped}{dropped task}
+\Task{unclear}{unclear task}
+\Task{started}{started task}
+\Task{done}{done task}
+\end{CheckList}
+\paragraph{Artifacts}
+\begin{CheckList}{Artifact}
+\Artifact{missing}{missing artifact}
+\Artifact{dropped}{dropped artifact}
+\Artifact{unclear}{unclear artifact}
+\Artifact{incomplete}{incomplete artifact}
+\Artifact{available}{available artifact}
+\end{CheckList}
+\paragraph{Milestones}
+\begin{CheckList}{Milestone}
+\Milestone{open}{open milestone}
+\Milestone{achieved}{achieved milestone}
+\end{CheckList}
+
+\CheckListSet{strict-dates,input-dates=d.m.y,output-dates=same}
+\begin{CheckList}{Goal}
+  \Goal[deadline=31.12.999]{achieved}{Y1K problems are resolved.}
+  \Goal[who=John,deadline=31.12.1999]{open}{Y2K problems are resolved.}
+  \begin{CheckList}[layout=table]{Task}
+    \Task[who=John,label=Fix1]{started}{Repair all programs}
+    \Task[who=Mankind,deadline=31.12.1999]{open}{Just turn off all computers, if \ref{Fix1} fails}
+  \end{CheckList}
+  \Goal[deadline=31.12.65535]{unclear}{Y65K problems are resolved.}
+  \begin{CheckList}[strict-dates=false,output-dates=m/d/y]{Task}
+    \Task[deadline=$\approx 2500AD$,label=TM]{open}{Build Y65K-proof time machine.}
+    \Task[deadline=31.12.65535]{open}{Use time machine from \ref{TM} if problem persists.}
+  \end{CheckList}
+\end{CheckList}
+
+  \end{document}

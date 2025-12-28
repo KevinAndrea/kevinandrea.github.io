@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Floating Point Processor</title>
+		<style>
+			.sgnstyle {
+				outline: 3px solid CornflowerBlue;
+				background-color: CornflowerBlue;
+			}
+
+			.expstyle {
+				outline: 3px solid LightGreen;
+				background-color: LightGreen;
+			}
+
+			.mtsstyle {
+				outline: 3px solid Salmon;
+				background-color: Salmon;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Floating Point Calculator</h1>
+		<h2>Size</h2>
+		<p>As floating point numbers are stored in memory, they are represented as bits. Floating point values are commonly powers of 2 above 8, in order to neatly fit into bytes, though this is not always the case: NVidia's "TensorFloat" format, for example, is 19 bits wide.</p>
+		<p>This floating point's width in bits: <input type="number" id="width"></p>
+		<button type="button" onclick="stage2()">Go</button>
+		<div id="stage2"></div>
+		
+		<script src="stages.js"></script>
+	</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Kevin Andrea ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<!--                    <span><a href="#"><img border="0" width="75" src="images/gmu.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/Kevin_Andrea.png">
+                        <img id="mobile-img" src="images/Kevin_Andrea.png" border="0" height="250" alt="Image of Prof. Andrea"></a>
+                </div>
+                <div align="left" class="col-md-4">
+                    <h2>Kevin Andrea
+                        <h5><i>PhD, George Mason University, USA, 2023</i></h5>
+
+                    </h2>
+                    
+                    <h4>Assistant Professor (Teaching-Track)<br>
+                        <a href="https://cs.gmu.edu/">Dept. of Computer Science</a><br>
+                        <a href="https://www.gmu.edu/">George Mason University</a><br>
+                        Tel: (Unavailable - Out of Office) 703-993-5429<br/>
+                        Email: kandrea [at] gmu [dot] edu  <br/>
+                        Affiliated Labs: 
+                        <ul>
+                          <li><a href="https://cnslab.cs.gmu.edu/">Computer and Networking Systems (CNS) Lab</a><br></li>
+                          <li><a href="https://cs.gmu.edu/~robotics/pmwiki.php">Autonomous Robotics Laboratory</a><br></li>
+                        </ul>
+                    </h4>
+                    <h4><i>Expertise: Computer Systems, Embedded Programming, Internet of Things</i> 
+                    
+                </div>
+<!--                
+                <i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+                        <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @dmslucy</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i>
+-->                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>All Publications</h2>
+                        <h4>
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 3
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?user=iqZGec4AAAAJ&hl=en"><font color=white>Citations</font></a>:44
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 4
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://orcid.org/0000-0002-8141-3266"><font color="white">ORCID</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=56912231000"><font color="white">Scopus</font></a>
+                            </span>
+                            
+                            
+                        </h4>
+                        <!--
+                        <h3>Drafts in Preparation</h3>
+                        <ul>
+                            <li><span class="label label-success">Draft</span> <a target="_blank" href="icc23.pdf">"Reliable Data Delivery in the Presence of Uncontrollable Mobile Sinks in Low Power Wireless Networks"</a>, <b>Kevin Andrea</b> and Robert Simon. <font color="magenta">(*Under Revisement)</font></li>
+
+                        </ul>
+                        -->
+                        <h3>Peer-Reviewed Publications</h3>
+                        <ul>
+                            <li><span class="label label-success">MILCOM'17</span> <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8170748/">"The Design and Implementation of a Multicast Address Moving Target Defensive System for Internet-of-Things Applications"</a>, <b>Kevin Andrea</b>, Arda Gumusalan, Robert Simon, Hugh Harney. <b>2017 IEEE Military Communications Conference (MILCOM'17)</b>, Baltimore, MD, 2017. <font color="red">(Best Paper Award - 153 Accepted Papers)</font></li>
+                            </li>
+                          <li><span class="label label-success">MSWIM'15</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/2811587.2811614">"Design and Evaluation of an RPL-based Multi-Sink Routing Protocol for Low-Power and Lossy Networks"</a>, <b>Kevin Andrea</b> and Robert Simon. In Proceedings of the 18th <b>ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWIM'15)</b>.  Association of Computing Machinery, New York, NY, USA, 141-150, 2018. (Acceptance Rate: 26%)</li>
+                          <li><span class="label label-success">AAMAS'15</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.5555/2772879.2772918">"Swarm Robot Foraging with Wireless Sensor Motes"</a>, Katherine Russell, Michael Schader, <b>Kevin Andrea</b>, and Sean Luke. In Proceedings of the 2015 <b>International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15)</b>.  International Foundation for Autonomous Agents and Multiagent Systems, Richland, SC, 287-295. (Acceptance Rate: 27%)</li>
+                                </ul>
+                        <h3>Workshop papers</h3>
+                        <ul>
+                            <li><span class="label label-success">NATO IST-152'17</span> <a target="_blank" href="http://ceur-ws.org/Vol-2057/Paper14.pdf">"Distributed Attenuation Agents for Mitigation of DDoS Attack"</a>, Hugh Harney, <b>Kevin Andrea</b>, and Robert Simon. <b>NATO Intelligent Autonomous Agents for Cyber Defence and Resilience (IST-152)</b>, 2017.</li>
+                            <li><span class="label label-success">NATO SET-222'16</span> <a target="_blank" href="https://cs.gmu.edu/~sean/papers/SET222Andrea.pdf">"Supporting Mobile Swarm Robotics in Low Power and Lossy Sensor Networks"</a>, <b>Kevin Andrea</b>, Robert Simon, and Sean Luke. <b> NATO Specialists Meeting on Swarm Centric Solution for Intelligent Sensor Networks (SET-222)</b>, 2016.</li>
+                            <li><span class="label label-success">RoboCup'12</span> <a target="_blank" href="robocup12tdp.pdf">"RoboPatriots: George Mason University 2012 RoboCup Team"</a>, Keith Sullivan, Katherine Russell, <b>Kevin Andrea</b>, Barak Stout, and Sean Luke. <b> Proceedings of the 2012 RoboCup Workshop</b>, 2012.</li>
+                            </ul>
+                        <h3>Technical Reports</h3>
+                        <ul>
+                            <li><span class="label label-success">GMU-CS-TR</span> <a target="_blank" href="https://cs.gmu.edu/media/techreports/GMU-CS-TR-2016-3.pdf">"Simple Agile RPL Multicast (SARCAST)"</a>, <b>Kevin Andrea</b> and Robert Simon. <b>Technical Report GMU-CS-TR-2016-3</b>, 2016.</li>
+                            </ul>
+                            <h3>Presentations</h3>
+                            <ul>
+                            <li><span class="label label-success">Gateway2STEM</span> "Creating Engaging Videos"</a>, <b>Kevin Andrea</b>. <b>Gateway2STEM</b> brown bag session invited talk. May 22, 2023.</li>
+                            <li><span class="label label-success">ITL'20</span> <a target="_blank" href="https://journals.gmu.edu/index.php/ITLCP/article/view/2763">"Active Learning Strategies that Transcend Physical Space: Lessons from Across Disciplines"</a>, Laura Poms, Jessica Rosenberg, Jill Nelson, <b>Kevin Andrea</b>, Crystal Anderson, and Alexandria Zylstra. <b>Innovations in Teaching and Learning Conference Proceedings</b>, Volume 12, 2020.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2023 | Kevin Andrea. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>

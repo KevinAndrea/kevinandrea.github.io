@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>CS483 Timeline Fall 2023</title>
+
+<meta content="K. Raven Russell" name="author">
+<meta content="Kevin Andrea" name="author">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+	var chart = null
+
+	google.charts.load("current", {packages:["timeline"]});
+	google.charts.setOnLoadCallback(drawChart);
+	window.addEventListener('resize', drawChart);
+	
+	function ExtendCurrent(div, isInline){
+		var len = 0;
+		$('#'+div+' rect').each(function(index) {
+			yVal = parseFloat($(this).attr('y'));
+			xVal = parseFloat($(this).attr('x'));
+			if ( xVal == 0 && yVal == 0 ) { len = parseFloat($(this).attr('height')) };
+		});
+
+		$('#'+div+' text:contains("TIME")').css('font-size','11px').attr('fill','#A6373C').prev('rect').attr('height',len+'px').attr('width','3px').attr('y','0').attr('fill','#AA0000');
+
+		if (isInline != -1) {
+			if ( 0 == isInline )
+				$('.google-visualization-tooltip').css('display','none');
+			else
+				$('.google-visualization-tooltip').css('display','inline');
+		}
+	}
+	
+	function createRow(type, name, start, end, longName=null) {
+		var formatDate = new google.visualization.DateFormat({
+			pattern: 'MMM d h:mmaa'
+		});
+		
+		var formatHour = new google.visualization.DateFormat({
+			pattern: 'MMM d h:mmaa'
+		});
+		
+		var duration = Math.abs(end.getTime() - start.getTime()) / 1000;
+		
+		//end dates should end at end of day for multi-day events
+		if(duration / 86400 >= 1 || duration == 0) {
+			end = new Date(end.valueOf());
+			end.setHours(23,59,59,0)
+			duration = Math.abs(end.getTime() - start.getTime()) / 1000;
+		}
+		
+		//durration of event (+ 60 seconds to round off to full days)
+		duration += 1
+		var days = Math.floor(duration / 86400);
+		duration -= days * 86400;
+		var hours = Math.floor(duration / 3600) % 24;
+		duration -= hours * 3600;
+		var minutes = Math.floor(duration / 60) % 60;
+		
+		//creating the tooltip for events
+		var tooltip = '';
+		tooltip += '<div class="ggl-tooltip"><div>';
+		//tooltip += '<span>' + type + ':&nbsp;</span>';
+		
+		//customize a few of these
+		tooltip += '<span>' + ((longName == null) ? name : longName) + '</span>';
+		tooltip += '</div><div>';
+		
+		//add in the date range
+		if(days < 1) tooltip += formatHour.formatValue(start) + ' - ' + formatHour.formatValue(end);
+		else tooltip += formatDate.formatValue(start) + ' - ' + formatDate.formatValue(end);
+		tooltip += '</div><div>';
+		
+		//add in the duration
+		tooltip += '<span>Duration:&nbsp;</span>';
+		if(days > 0) tooltip += days + ((days == 1) ? ' day ' : ' days ');
+		if(hours > 0) tooltip += hours + ((hours == 1) ? ' hour ' : ' hours ');
+		if(minutes > 0) tooltip += minutes + ((minutes == 1) ? ' minute ' : ' minutes ');
+		
+		if(days > 0 && hours == 1) tooltip += '<br />^ not a mistake, daylight savings time';
+		
+		tooltip += '</div></div>';
+		
+		return [type, name, tooltip, start, end]
+	}
+
+	function drawChart(chart) {
+		chart = new google.visualization.Timeline(document.getElementById('timeline'));
+		
+		var dataTable = new google.visualization.DataTable();
+		dataTable.addColumn({ type: 'string', id: 'Type' });
+		dataTable.addColumn({ type: 'string', id: 'Name' });
+		dataTable.addColumn({ type: 'string', role: 'tooltip', p: {html: true} });
+		dataTable.addColumn({ type: 'date', id: 'Start' });
+		dataTable.addColumn({ type: 'date', id: 'End' });
+
+		year = 2023
+		timenow = new Date();
+		starttime = new Date(year,7,21);
+		endtime = new Date(year,11,13,12,59);
+		addEnd = new Date(year,7,28);
+		dropEnd = new Date(year,8,5);
+		withdrawEnd = new Date(year,8,27);
+		selectWithdrawEnd = new Date(year,9,23);
+		firstReadingDay = new Date(year,11,4);
+		fallBreak = new Date(year,9,9)
+		thanksgivingBreak = new Date(year,10,22)
+		
+		if(timenow < starttime) {
+			displaytime = starttime;
+			timelabel = "TIME - Beginning of Semester: "
+		}
+		else if(timenow > endtime) {
+			displaytime = endtime;
+			timelabel = "TIME - End of Semester: "
+		}
+		else {
+			displaytime = timenow;
+			timelabel = "TIME - NOW: "
+		}
+	
+		Date.prototype.addDays = function(days) {
+			var date = new Date(this.valueOf());
+			date.setDate(date.getDate() + days);
+			return date;
+		}
+			
+		dataTable.addRows([
+			['Time', timelabel + '[' + displaytime + ']', null, displaytime, displaytime],
+			createRow('CS 483',		'CS 483',				starttime,					endtime ),
+			createRow('Exams', 		'Midterm-002',			new Date(year,9,5,10,30),	new Date(year,9,5,11,45) ),
+			createRow('Exams', 		'Midterm-001',			new Date(year,9,5,15),		new Date(year,9,5,16,15) ),
+			createRow('Exams', 		'Final-All Sections',	new Date(year,11,8,7,30),		new Date(year,11,8,10,15) ),
+		]);
+		
+		hw1day = new Date(year,7,23)
+		for(var i = 1; i <= 14; i++) {
+			var longName = ""
+			if(i % 2 == 1) longName = "Code";
+			else longName = "Paper-and-Pencil";
+		
+			//two week projects
+			if(i == 5 || i == 6 || i == 13) {
+				dataTable.addRows([createRow('Homework', 'HW'+i, hw1day.addDays((i-1)*7), hw1day.addDays(6+(7*(i-1))+7), 'HW'+i+': '+longName)]);
+			}
+			//no homework
+			else if(i == 7 || i == 8) {
+				//do nothing
+			}
+			//due last day of classes instead
+			else if(i == 14) {
+				dataTable.addRows([createRow('Homework', 'HW'+i, hw1day.addDays((i-1)*7), new Date(year,11,3), 'HW'+i+': '+longName)]);
+			}
+			//"normal" homeworks
+			else {
+				if(i % 2 == 1) longName = "Mini-" + longName;
+				dataTable.addRows([createRow('Homework', 'HW'+i, hw1day.addDays((i-1)*7), hw1day.addDays(6+(7*(i-1))), 'HW'+i+': '+longName)]);
+			}
+		}
+			
+		dataTable.addRows([
+			createRow('University',	'Labor Day',			new Date(year,8,4),			new Date(year,8,4) ),
+			createRow('University',	'Drop',					starttime,					dropEnd, 						"Drop Period"),
+			createRow('University',	'Add',					starttime,					addEnd, 						"Add Period"),
+			createRow('University',	'Withdraw',				dropEnd.addDays(1),			withdrawEnd,					"Unrestricted Withdrawal Period" ),
+			createRow('University', 'Fall Break',			fallBreak,					fallBreak.addDays(1),			"Fall Break (No Classes on Monday)<br />Monday Classes held on Tuesday!" ),
+			createRow('University', 'Thanksgiving',			thanksgivingBreak,			thanksgivingBreak.addDays(4),	"Thanksgiving Recess (No Classes on Wed-Sun)" ),
+			createRow('University',	'Selective Withdrawal',	withdrawEnd.addDays(1),		selectWithdrawEnd,				"Selective Withdrawal Period" ),
+			createRow('University',	'Reading Days',			firstReadingDay,			firstReadingDay.addDays(1) ),
+			createRow('University',	'Finals',				firstReadingDay.addDays(2),	endtime ),
+		]);
+
+		var options = {
+			timeline: { colorByRowLabel: false },
+			alternatingRowStyle: false,
+			timeline: { rowLabelStyle: { fontSize: 18 },
+						barLabelStyle: { fontSize: 16 } }
+		};
+		
+		chart.draw(dataTable, options);
+		ExtendCurrent('timeline', -1);
+		google.visualization.events.addListener(chart, 'onmouseover', function(obj) {
+			ExtendCurrent('timeline', obj.row);
+		});
+		google.visualization.events.addListener(chart, 'onmouseout', function(obj) {
+			ExtendCurrent('timeline', -1);
+		});
+	}
+
+
+</script>
+
+</head>
+
+<body>
+	<div id="timeline" style="height: 800px;"></div>
+</body>
+
+</html>
+
+

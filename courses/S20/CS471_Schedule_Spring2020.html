@@ -1,0 +1,667 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="generator" content="HTML Tidy for Mac OS X (vers 31
+      October 2006 - Apple Inc. build 16.1), see www.w3.org">
+    <title>CS 471 Schedule, Spring 2020</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="Org-mode">
+    <meta name="author" content="George Mason University">
+    <style type="text/css">
+/*<![CDATA[*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+  /*]]>*/
+  </style>
+    <script type="text/javascript">
+/*
+  @licstart  The following is the entire license notice for the
+  JavaScript code in this tag.
+
+  Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+  The JavaScript code in this tag is free software: you can
+  redistribute it and/or modify it under the terms of the GNU
+  General Public License (GNU GPL) as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option)
+  any later version.  The code is distributed WITHOUT ANY WARRANTY;
+  without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+  As additional permission under GNU GPL version 3 section 7, you
+  may distribute non-source (e.g., minimized or compacted) forms of
+  that code without the copy of the GNU GPL normally required by
+  section 4, provided you include this license notice and a URL
+  through which recipients can access the Corresponding Source.
+
+
+  @licend  The above is the entire license notice
+  for the JavaScript code in this tag.
+  */
+  <!--/*--><![CDATA[/*><!--*/
+  function CodeHighlightOn(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+  }
+  function CodeHighlightOff(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+  }
+  /*]]>*///-->
+  </script>
+    <style type="text/css">
+/*<![CDATA[*/
+  @media print {#ghostery-purple-box {display:none !important}}
+  /*]]>*/
+  </style>
+    <style type="text/css">
+/*<![CDATA[*/
+  /* Mason green section borders */
+  /* Left section header style */ 
+  div.outline-2, #table-of-contents {
+  /* display: block; */ 
+  /* position: relative; */
+  margin: 3em 0; 
+  border-left: 0.75em solid #006633; /* #369; */
+  padding-left: .5em;
+  padding-bottom: 0px;
+  background: rgb(250,250,250);
+  }
+
+  div.outline-2 > h2, #table-of-contents > h2 {
+  background: #006633; /* #369; */
+  /* width: 8em; */
+  color: white; /* #FFCC33; */
+  font-size: 1.5em; 
+  font-variant: small-caps;
+  /* padding-left:0.25em; */
+  margin-left:-0.5em;
+  /* float:left; */
+  /* display:inline-block; */
+  }
+
+  body {
+    background-color: #CCC;
+    color: #000;
+    font-family: Helvetica, Arial, Verdana;
+    line-height: 1.5;
+   max-width:1000px;
+   margin:0 auto;
+    }
+
+
+  /*]]>*/
+  </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">CS 471 Tentative Schedule, Spring 2020</h1>
+      <div id="outline-container-sec-1" class="outline-2">
+        <h2 id="sec-1"><span class="section-number-2">1 Programming
+            Assignments</span><br>
+        </h2>
+        <div class="outline-text-2" id="text-1">
+          <p>All programming assignments will be posted and announced as
+            early as we have them prepared.<br>
+            <b>These dates will be populated when the assignments are
+              given.</b><br>
+          </p>
+          <ul>
+            <li><b>PA 0</b>: Monday, January 27 - Monday, February 10
+              (11:59pm)<br>
+            </li>
+            <li><b>PA 1</b>: Thursday, February 19th - Friday, March 27<br>
+            </li>
+            <li><b>PA 2</b>: Friday, April 3rd - Friday, May 8th<br>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-2" class="outline-2">
+        <h2 id="sec-2"><span class="section-number-2">2</span> Test
+          Schedule</h2>
+        <div class="outline-text-2" id="text-2">
+          <p>Tests are bigger milestones, and their dates are announced
+            ahead of time. <br>
+            The Midterm date is tentative and will be confirmed by the
+            Professor at least two weeks before the date.<br>
+          </p>
+          <ul class="org-ul">
+            <li><b>Midterm 1</b>: Mar 4 (W) in your normal
+              classroom.&nbsp; <br>
+            </li>
+            <ul>
+              <li>Covers Chapters 1-6 (Processes and Threads), 26-33
+                (Synchronization and Concurrency)</li>
+            </ul>
+            <li><b>Midterm 2</b>: Apr 27 (M) Online; Details TBD.&nbsp;
+              <br>
+            </li>
+            <ul>
+              <li>Covers Chapters 7-11 (Scheduling), 13-23 (Memory
+                Management and Virtual Memory)</li>
+            </ul>
+            <li><b>Final Exam</b>: See Exam Schedule. The format is TBD,
+              however, once the format is set, you will have a window of
+              time to start the exam and the normal amount of time to
+              complete once started. (Accommodations will be Applied to
+              Time)
+              <ul class="org-ul">
+                <li><a
+                    href="https://registrar.gmu.edu/calendars/spring-2020/final-exams/">https://registrar.gmu.edu/calendars/spring-2020/final-exams/</a><br>
+                </li>
+                <li>The Final Exam is <b>Comprehensive</b><br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-3" class="outline-2">
+        <h2 id="sec-3"><span class="section-number-2">3</span> Topics
+          and Readings</h2>
+        <div class="outline-text-2" id="text-3">
+          <p>Below is a tentative schedule, which is subject to change
+            as needed.<br>
+          </p>
+          <ul>
+            <li>This is the Planned Schedule of Topics.&nbsp; Individual
+              lectures may vary, but this this the plan.</li>
+            <li>Note: Monday Jan 20 is a Holiday, so the M/W section
+              will be off by one lecture relative to the T/Th or the F
+              sections.<br>
+            </li>
+          </ul>
+          <table rules="groups" frame="hsides" cellspacing="0"
+            cellpadding="6" border="2">
+            <colgroup> <col class="left"> <col class="left"> <col
+                class="left"> <col class="left"><col class="left"> <col
+                class="left"> </colgroup> <thead> <tr>
+                <th scope="col" class="left" align="center">Week of</th>
+                <th scope="col" class="left" align="center">Topic</th>
+                <th scope="col" class="left" align="left">Lecture Topics</th>
+                <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                </td>
+                <th scope="col" class="left" align="center">Text
+                  Readings</th>
+              </tr>
+              <tr>
+                <th scope="col" class="left"> Monday</th>
+                <th scope="col" class="left">&nbsp;</th>
+                <th scope="col" class="left">&nbsp;</th>
+                <td valign="top"><br>
+                </td>
+                <th scope="col" class="left">(For this Week) <br>
+                </th>
+              </tr>
+            </thead> <tbody>
+              <tr>
+                <td class="left">1/20<br>
+                </td>
+                <td class="left"><b>Intro to OS<br>
+                  </b></td>
+                <td class="left">Course Intro <br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">1-2 (Operating Systems Overview)</td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">1/27<br>
+                </td>
+                <td class="left">&nbsp;<br>
+                </td>
+                <td class="left">History and Overview of OS<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">1-2 (Operating Systems Overview)</td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><b>Processes and Threads</b><br>
+                </td>
+                <td class="left">Processes and Threads<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">5-6 (Processes), 26 (Threads)</td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">2/3<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Processes and Threads<br>
+                  <br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">5-6 (Processes), 26 (Threads)</td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">2/10<br>
+                </td>
+                <td class="left"><br>
+                  <b>Synchronization</b><br>
+                </td>
+                <td class="left">Processes and Threads<br>
+                  Synchronization<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">5-6 (Processes), 26 (Threads)<br>
+                  27-33 (Synchronization)<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">2/17</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Synchronization</td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">27-33 (Synchronization)</td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">2/24<br>
+                </td>
+                <td class="left"><b>Scheduling</b><br>
+                </td>
+                <td class="left">Scheduling<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">7-10 (Scheduling)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">3/2<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Scheduling </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">7-10 (Scheduling) </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><b>Midterm (All Sections)</b><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><b>Covers: Processes, Threads,
+                    Synchronization</b><b><br>
+                  </b> </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">3/9</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><b>Spring Break</b><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">3/16</td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><b>Spring Break</b> </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Part 2<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">3/23</td>
+                <td class="left"><b>Scheduling</b><br>
+                </td>
+                <td class="left">Non-Preemptive Scheduling<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">7-10 (Scheduling)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Preemptive Scheduling<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">3/30<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Real-Time Scheduling<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><b>Memory</b></td>
+                <td class="left">Overview<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">13-21 (Memory Management) </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">4/6<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Contiguous and Segmentation<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Paging and TLB<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">4/13<br>
+                </td>
+                <td class="left"><b>Virtual Memory</b> </td>
+                <td class="left">Page Tables / Demand Paging<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">21-23 (Virtual Memory)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Page Replacement, Working Sets<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody><tbody>
+              <tr>
+                <td class="left">4/20<br>
+                </td>
+                <td class="left"><b>File System</b><br>
+                </td>
+                <td class="left">Overview and Tree Structures<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">36-45 (File Systems)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td class="left">Disk Scheduling / ZFS<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">4/27<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><b>Midterm 2</b><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left">NAND and Flash Storage<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">5/4<br>
+                </td>
+                <td class="left"><b>Security</b><br>
+                </td>
+                <td class="left">Buffer Overflow, ASLR<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">Slides<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">5/11<br>
+                </td>
+                <td class="left"><b>Virtualization</b><br>
+                </td>
+                <td class="left">Virtualization Overview<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left">Slides<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,636 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="generator" content="HTML Tidy for Mac OS X (vers 31
+      October 2006 - Apple Inc. build 16.1), see www.w3.org">
+    <title>CS 367 Schedule, Spring 2019</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="generator" content="Org-mode">
+    <meta name="author" content="George Mason University">
+    <style type="text/css">
+/*<![CDATA[*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+  /*]]>*/
+  </style>
+    <script type="text/javascript">
+/*
+  @licstart  The following is the entire license notice for the
+  JavaScript code in this tag.
+
+  Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+  The JavaScript code in this tag is free software: you can
+  redistribute it and/or modify it under the terms of the GNU
+  General Public License (GNU GPL) as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option)
+  any later version.  The code is distributed WITHOUT ANY WARRANTY;
+  without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+  As additional permission under GNU GPL version 3 section 7, you
+  may distribute non-source (e.g., minimized or compacted) forms of
+  that code without the copy of the GNU GPL normally required by
+  section 4, provided you include this license notice and a URL
+  through which recipients can access the Corresponding Source.
+
+
+  @licend  The above is the entire license notice
+  for the JavaScript code in this tag.
+  */
+  <!--/*--><![CDATA[/*><!--*/
+  function CodeHighlightOn(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+  }
+  function CodeHighlightOff(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+  }
+  /*]]>*///-->
+  </script>
+    <style type="text/css">
+/*<![CDATA[*/
+  @media print {#ghostery-purple-box {display:none !important}}
+  /*]]>*/
+  </style>
+    <style type="text/css">
+/*<![CDATA[*/
+  /* Mason green section borders */
+  /* Left section header style */ 
+  div.outline-2, #table-of-contents {
+  /* display: block; */ 
+  /* position: relative; */
+  margin: 3em 0; 
+  border-left: 0.75em solid #006633; /* #369; */
+  padding-left: .5em;
+  padding-bottom: 0px;
+  background: rgb(250,250,250);
+  }
+
+  div.outline-2 > h2, #table-of-contents > h2 {
+  background: #006633; /* #369; */
+  /* width: 8em; */
+  color: white; /* #FFCC33; */
+  font-size: 1.5em; 
+  font-variant: small-caps;
+  /* padding-left:0.25em; */
+  margin-left:-0.5em;
+  /* float:left; */
+  /* display:inline-block; */
+  }
+
+  body {
+    background-color: #CCC;
+    color: #000;
+    font-family: Helvetica, Arial, Verdana;
+    line-height: 1.5;
+   max-width:1000px;
+   margin:0 auto;
+    }
+
+
+  /*]]>*/
+  </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">CS 531 Planned Schedule, Fall 2019</h1>
+      <div id="outline-container-sec-1" class="outline-2">
+        <h2 id="sec-1"><span class="section-number-2">1 </span>Projects
+          <br>
+        </h2>
+        <div class="outline-text-2" id="text-1">
+          <p>All projects will be posted and announced as early as we
+            have them prepared, generally with two weeks to complete the
+            assignment.<br>
+            These dates are subject to change as needed during the
+            semester.<br>
+          </p>
+          <ul>
+            <li><b>Project 1</b>: Linked Lists&nbsp;&nbsp; (Sep 18 - Oct
+              2)</li>
+            <li><b>Project 2</b>: Hash Tables&nbsp; (Oct 18 - Nov 8)</li>
+            <li><b>Project 3</b>:
+              Graphs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              (Nov 13 - Dec 2)<br>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-2" class="outline-2">
+        <h2 id="sec-2"><span class="section-number-2">2</span> Test
+          Schedule</h2>
+        <div class="outline-text-2" id="text-2">
+          <p>Tests are bigger milestones, and their dates are announced
+            ahead of time. <br>
+            Only severe scheduling anomalies would force a delay in test
+            dates.</p>
+          <ul class="org-ul">
+            <li><b>Midterm </b>: Oct 22 (Tuesday) in the first half of
+              the class.&nbsp; (Normal Lecture in the second half)<br>
+            </li>
+            <li><b>Final Exam</b>: See Exam Schedule. Any weather or
+              closures during the semester may affect your entire exam
+              schedule in all courses.
+              <ul class="org-ul">
+                <li><a
+                    href="https://registrar.gmu.edu/calendars/fall-2019/final-exams/">https://registrar.gmu.edu/calendars/fall-2019/final-exams/</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-3" class="outline-2">
+        <h2 id="sec-3"><span class="section-number-2">3</span> Topics
+          and Readings</h2>
+        <div class="outline-text-2" id="text-3">
+          <p>Note, you can access our textbooks in the <b>Library </b>or
+
+
+
+
+            through the <b>Safari Tech Book</b> service through the
+            library.</p>
+          <p>Notation:<br>
+          </p>
+          <ul>
+            <li>(K&amp;R) - The C Programming Language</li>
+            <li>(MA) - Mastering Algorithms with C</li>
+            <li>(APUE) - Advanced Programming in the Unix Environment<br>
+            </li>
+          </ul>
+          <p>Below is a tentative schedule, which is subject to change
+            as needed.</p>
+          <table frame="hsides" rules="groups" cellspacing="0"
+            cellpadding="6" border="2">
+            <colgroup> <col class="left"> <col class="left"> <col
+                class="left"> <col class="left"> <col class="left"> </colgroup>
+            <thead> <tr>
+                <th scope="col" class="left">Lecture<br>
+                </th>
+                <th scope="col" class="left">Topic</th>
+                <td valign="top">
+                  <meta http-equiv="Content-Type" content="text/html;
+                    charset=windows-1252">
+                  <b>Lecture Topics</b>
+                  <meta name="ProgId" content="Excel.Sheet">
+                  <meta name="Generator" content="Microsoft Excel 15">
+                  <link id="Main-File" rel="Main-File"
+href="file:////Users/kevin/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip.htm">
+                  <link rel="File-List"
+href="file:////Users/kevin/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_filelist.xml">
+                  <style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+td
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-number-format:"\@";
+	vertical-align:top;}
+.xl66
+	{text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFF2CC;
+	mso-pattern:black none;}
+.xl67
+	{text-align:left;
+	vertical-align:top;}
+-->
+</style></td>
+                <th scope="col" class="left">Textbook Readings<br>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" class="left">Date</th>
+                <th class="left" scope="col">&nbsp;</th>
+                <td valign="top"><br>
+                </td>
+                <th scope="col" class="left">&nbsp;(For this week)<br>
+                </th>
+              </tr>
+            </thead> <tbody>
+              <tr>
+                <td class="left">8/27<br>
+                </td>
+                <td class="left"><b>Foundations of C<br>
+                  </b></td>
+                <td valign="top">Course Intro, Foundations of C</td>
+                <td class="left">K&amp;R - 1, 2, 3, 5.3-5.4<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left">&nbsp;</td>
+                <td valign="top">Operators, Control Flow, Arrays</td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">9/3<br>
+                </td>
+                <td class="left" width="250"><br>
+                </td>
+                <td valign="top" width="250">Functions, Scope, Headers<br>
+                </td>
+                <td class="left">K&amp;R - 4, 5<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Preprocessor, Pointers, Arrays<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td valign="top">9/10<br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td valign="top">Libraries, Dynamic Memory<br>
+                </td>
+                <td valign="top">K&amp;R - 7<br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Dynamic Array Operations<br>
+                </td>
+                <td class="left">MA - 2<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">9/17<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Structs and Unions, Enums<br>
+                </td>
+                <td class="left">K&amp;R - 6<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Linked Lists and Operations<br>
+                </td>
+                <td class="left">MA - 5<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">9/24</td>
+                <td class="left"><b>Data Structures</b><br>
+                </td>
+                <td valign="top">Algorithm Analysis<br>
+                </td>
+                <td class="left">MA - 4<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Stacks and Queues<br>
+                </td>
+                <td class="left">MA - 6<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">10/1<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">File I/O and Streams<br>
+                </td>
+                <td class="left">K&amp;R 7.5-7.7, 8.1<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Recursion, Searching, Sorting<br>
+                </td>
+                <td class="left">MA - 3, 12<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">10/8<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Hash Tables and Operations<br>
+                </td>
+                <td class="left">MA - 8<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Collision Resolution<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left"><br>
+                </td>
+                <td class="left" bgcolor="#c0c0c0"><br>
+                </td>
+                <td valign="top" bgcolor="#c0c0c0">Fall Break<br>
+                </td>
+                <td class="left" bgcolor="#c0c0c0"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top" align="left"><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">10/22</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top"><u><b>Midterm</b></u><br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">CLI Arguments, Debugging<br>
+                </td>
+                <td class="left">K&amp;R - 5.10, 7.6<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">10/29</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Trees, Tree Traversals, AVL<br>
+                </td>
+                <td class="left">MA - 9<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Binary Search Tree, String Procs.<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">11/5<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Heaps, Heap Operations<br>
+                </td>
+                <td class="left">MA - 10<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Priority Queues<br>
+                </td>
+                <td class="left">MA - 10<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">11/12<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Graphs, Adjacency List/Matrix<br>
+                </td>
+                <td class="left">MA - 11<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Graph Algorithms (Dijkstra/Prim)<br>
+                </td>
+                <td class="left">MA - 16<br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">11/19<br>
+                </td>
+                <td class="left"><b>Systems Programming</b><br>
+                </td>
+                <td valign="top">Unix, Processes and Signals<br>
+                </td>
+                <td class="left">APUE - 8, 10.1-10.3,14.1-14.2<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Exceptions, Daemons, I/O<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody><tbody>
+              <tr>
+                <td class="left">11/26<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Concurrency and Synchronization<br>
+                </td>
+                <td class="left">APUE - 11 (Only Concepts)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Threads, Python Threads<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+              <tr>
+                <td class="left">12/3<br>
+                </td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">IPC (Pipes/FIFO/Shared), Sockets<br>
+                </td>
+                <td class="left">APUE - 15 (Only Concepts)<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="left">&nbsp;</td>
+                <td class="left"><br>
+                </td>
+                <td valign="top">Client/Server in Python, OOP, Java<br>
+                </td>
+                <td class="left"><br>
+                </td>
+              </tr>
+            </tbody> <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

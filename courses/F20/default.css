@@ -1,0 +1,410 @@
+html {
+  min-height: 100%
+}
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  min-height: 100%;
+  line-height: 1.1;
+  background-color: #fdfff5;
+  color: #000080
+}
+
+#content {
+  margin: 10px auto 10px auto; 
+  max-width: 45em;
+  padding: 1em 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+h1#title {
+  display: block;
+  text-align: center;
+  font-family: "Baskerville",Georgia,serif;
+  font-size: xx-large;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-top: 0em
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-size: large
+}
+h1 {
+  color: #000000;
+  font-variant: small-caps
+}
+
+header {
+  display: block;
+  text-align: center;
+  border-bottom: thin solid #999999;
+  margin-bottom: 0;
+  margin-top: 0 
+} 
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+a {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+a:link {
+  color: #005FEE
+} 
+
+nav {
+  display: block;
+  text-align: center;
+  font-size: small;
+  margin: 0;
+  padding: 0
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  width: auto
+}
+
+nav li {
+  margin-left: 0;
+  margin-right: 0;
+  padding: .1em .5em 0 .5em;
+  display: inline;
+  width: auto
+}
+
+nav li .left {
+  float: left;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0
+}
+
+#page {
+  padding:0 .5em;
+  margin-top:2em
+}
+
+#home {
+  text-align: center;
+  padding:0 .5em;
+  margin-top:2em
+}
+
+#contact {
+  text-align: left;
+}
+
+#contact ul{
+/*  background: red; */
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#contact li{
+  margin-left: 20px;
+  text-align: left;
+}
+
+
+dt {
+  font-weight: bold  
+}
+
+footer {
+  text-align: center;
+  font-size: x-small;
+  font-style: italic;
+  color: #AAAAAA
+}
+
+footer a:link,
+footer a:visited {
+  color: #AAAAAA
+}
+
+body.courses li.courses,
+body.contact li.contact,
+body.languages li.languages,
+body.tools li.tools,
+body.publications li.publications,
+body.gcov li.gcov,
+body.gprof li.gprof,
+body.valgrind li.valgrind,
+body.gdb li.gdb,
+body.gcc li.gcc,
+body.git li.git,
+body.makefile li.makefile {
+  border:1px solid #98AFC7;
+  border-bottom:5px solid #ffffff;
+  border-top-right-radius:3px 5px;
+  border-top-left-radius:3px 5px;
+  background:white
+}
+
+#codeblock {
+  width: 40em;
+  padding-left: auto
+  margin-left: auto;
+  text-align: left;
+  border: 1px solid black;
+  background: #ffeedd
+}
+
+pre.code {
+  white-space: pre-wrap;
+}
+pre.code:before {
+  counter-reset: listing;
+}
+pre.code code {
+  counter-increment: listing;
+}
+pre.code code::before {
+  content: counter(listing) "| ";
+  display: inline-block;
+  width: 4em;
+  padding-left: auto;
+  margin-left: auto; 
+  text-align: right; 
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside disc none !important;
+    padding: 5px 10px !important;
+}
+/*********************************
+body.research li.research,
+body.cv li.cv,
+body.teaching li.teaching,
+body.syllabus li.syllabus,
+body.supplement li.supplement,
+body.assignments li.assignments,
+body.home li.home,
+body.schedule li.schedule,
+body.timeline li.timeline {
+  border:1px solid #98AFC7;
+  border-bottom:5px solid #ffffff;
+  border-top-right-radius:3px 5px;
+  border-top-left-radius:3px 5px;
+  background:white
+}
+body.research li.research a,
+body.cv li.cv a,
+body.teaching li.teaching a,
+body.syllabus li.syllabus a,
+body.assignments li.assignments a,
+body.home li.home a,
+body.schedule li.schedule a,
+body.timeline li.timeline a {
+  color:black
+}
+article,
+#story {
+  width:auto;
+  margin:auto;
+  padding:0;
+  border-bottom:thin dotted #98AFC7;
+  display:block
+}
+article:last-child,
+#story:last-child {
+  border-bottom:none
+}
+blockquote {
+  border-left:3px solid #ccc;
+  padding-left:1em;
+  margin-left:1em;
+  margin-right:0
+}
+.boxed {
+  border:thin solid #98AFC7;
+  padding:1em
+}
+div.sitesearch p {
+  text-align:center
+}
+.home_image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border:thin;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  max-width:90%
+}
+
+body.cv h2,
+body.cv h3 {
+  font-size:small
+}
+pre {
+  text-align:left;
+  font-family:'Monaco',monospace;
+  font-size:small;
+  overflow:auto;
+  padding:1em;
+  background:#eee;
+  -moz-border-radius:4px;
+  border-radius:4px
+}
+ul {
+  list-style-type:circle
+}
+ul ul {
+  padding-left:1em;
+  list-style-type:none
+}
+
+/*
+body.cv #page ul {
+  list-style:none;
+  margin-left:0;
+  padding-left:3em;
+  text-indent:-3em
+}*/
+/*
+body.cv ul ul {
+  padding-left:3em
+}
+dl dt {
+  display:block;
+  float:left;
+  padding-right:1em
+}
+dl dd {
+  display:block;
+  padding:0 0 1em 0
+}
+dl dd p {
+  line-height:130%;
+  display:inline
+}
+dl dd:last-child {
+  padding:0
+}
+a.bml {
+  font-family:Optima,"Lucida Sans","Lucida Grande",sans-serif;
+  font-weight:bold;
+  border:thin solid #ccc;
+  padding:2px;
+  vertical-align:1px;
+  background:#eee;
+  text-decoration:none;
+  font-size:70%;
+  -moz-border-radius:4px;
+  border-radius:4px
+}
+.shadowed {
+  -webkit-box-shadow:10px 10px 8px #CCC;
+  -moz-box-shadow:#CCC 10px 10px 8px
+}
+.hidden {
+  display:none
+}
+.centered {
+  text-align:center
+}
+.centeredbox {
+  margin-left:auto;
+  margin-right:auto;
+  display:block
+}
+section.schedule {
+  border:thin solid;
+  padding:1em
+}
+section.schedule h1 {
+  padding-top:1em;
+  border-bottom:thin solid
+}
+
+
+
+@media print {
+  h1 {
+    font-size:14pt;
+    font-weight:bold
+  }
+  h1 {
+    prince-bookmark-level:1
+  } 
+  h2 {
+    prince-bookmark-level:2
+  }
+  h3 {
+    prince-bookmark-level:3
+  }
+  h4 {
+    prince-bookmark-level:4
+  }
+  h5 {
+    prince-bookmark-level:5
+  }
+  h6 {
+    prince-bookmark-level:6
+  }
+  ul,ol {
+    page-break-inside:avoid;
+    page-break-before:never
+  }
+  a:link,
+  a:visited {
+    background:white;
+    color:black;
+    text-decoration:none
+  }
+  header,
+  nav,
+  footer,
+  #sub-foot {
+    display:none
+  }
+  @page {
+    @bottom-center {
+      content:counter(page)
+    }
+    margin-top:1in;
+    margin-bottom:1in;
+    margin-left:1.25in;
+    margin-right:1.25in
+  }
+}
+*/
