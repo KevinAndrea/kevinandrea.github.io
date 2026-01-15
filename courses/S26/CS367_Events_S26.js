@@ -17,8 +17,8 @@ function addRows(dataTable) {
 // Time Bar - do not edit this entry
     [ 'Time', parameters.get('timeText'), parameters.get('barTime'), parameters.get('barTime')],
 // Exams
-    [ 'Exams', 'Midterm', doDate(2026,10,8,9,00),   doDate(2026,10,9,16,15)],
-    [ 'Exams', 'Finals Week', doDate(2026,12,10,0,00),   doDate(2026,12,17,23,59)],
+    [ 'Exams', 'Midterms Period', doDate(2026, 3, 4,0,00),   doDate(2026, 3, 5,23,59)],
+    [ 'Exams', 'Finals Week',     doDate(2026, 5, 6,0,00),   doDate(2026, 5,13,23,59)],
 // Projects
     [ 'Projects', 'Project 1 (Programming)', doDate(2026, 1,26,18,00), doDate(2026, 2, 6,23,59)],
     [ 'Projects', 'Project 2 (Programming)', doDate(2026, 2, 9,18,00), doDate(2026, 2,27,23,59)],
