@@ -63,7 +63,7 @@ function addRows(dataTable) {
       [ 'Special Dates',  'Reading Days', doDate(2026, 5, 5, 0, 0), doDate(2026, 5, 5,23,59) ],
       [ 'Special Dates',  'Finals Week',  doDate(2026, 5, 6, 0, 0), doDate(2026, 5,13,23,59) ],
     // Holidays
-      [ 'Holidays', '1pring Break',       doDate(2026, 3, 9, 0, 0), doDate(2026, 3,15,23,59) ],
+      [ 'Holidays', 'Spring Break',       doDate(2026, 3, 9, 0, 0), doDate(2026, 3,15,23,59) ],
   ]);
 
 }
