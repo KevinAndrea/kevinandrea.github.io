@@ -18,7 +18,7 @@ function addRows(dataTable) {
     [ 'Time', parameters.get('timeText'), parameters.get('barTime'), parameters.get('barTime')],
 //  [ 'Summer', 'Fall Semester', parameters.get('startTime'), parameters.get('endTime')],
     // Projects
-    [ 'Projects', 'PA0',       doDate(2026, 1,27,16,00), doDate(2026, 2,11,23,59)],
+    [ 'Projects', 'PA0',       doDate(2026, 1,27,10,00), doDate(2026, 2, 9,23,59)],
     [ 'Projects', 'PA1-Part1', doDate(2026, 2,24,16,00), doDate(2026, 3, 6,23,59)],
     [ 'Projects', 'PA1-Part2', doDate(2026, 2,24,16,00), doDate(2026, 3,27,23,59)],
     [ 'Projects', 'PA2-Part1', doDate(2026, 4, 1,16,00), doDate(2026, 4,10,23,59)],
