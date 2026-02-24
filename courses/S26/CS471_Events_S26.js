@@ -36,7 +36,7 @@ function addRows(dataTable) {
     // Homeworks
     [ 'Homeworks', 'H1 (M2)',   doDate(2026, 1, 27, 12,00), doDate(2026, 2,  4, 23, 59)],
     [ 'Homeworks', 'H2 (M3)',   doDate(2026, 2,  5, 12,00), doDate(2026, 2, 13, 23, 59)],
-    [ 'Homeworks', 'H3 (M4)',   doDate(2026, 2, 19, 12,00), doDate(2026, 2, 27, 23, 59)],
+    [ 'Homeworks', 'H3 (M4)',   doDate(2026, 2, 19, 12,00), doDate(2026, 2, 28, 23, 59)],
     [ 'Homeworks', 'H4 (M5)',   doDate(2026, 3, 17, 12,00), doDate(2026, 3, 27, 23, 59)],
     [ 'Homeworks', 'H5 (M6)',   doDate(2026, 3, 31, 12,00), doDate(2026, 4, 10, 23, 59)],
     [ 'Homeworks', 'H6 (M7)',   doDate(2026, 4, 14, 12,00), doDate(2026, 4, 24, 23, 59)],
