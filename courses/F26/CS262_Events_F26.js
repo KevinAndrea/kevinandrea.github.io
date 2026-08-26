@@ -125,13 +125,14 @@ function addWeekendQuiz(num, year, month, day) {
 
 function addLab(dataTable, num, year, month, day, adjustment = 0) {
   var start = doDate(year, month, day,  6, 00);
+  var workstart = doDate(year, month, day + 1,  6, 00);
   var labend = doDate(year, month, day + 1, 18, 00);
   var workend = doDate(year, month, day + 5 + adjustment, 18, 00);
   labend.setDate(labend.getDate());
   workend.setDate(workend.getDate());
   dataTable.addRows([
       ['Labs', 'L' + num, start, labend],
-      ['Assignment', 'H' + num + ' Assignment', start, workend]
+      ['Assignment', 'H' + num + ' Assignment', workstart, workend]
   ]);
   return;
 }
