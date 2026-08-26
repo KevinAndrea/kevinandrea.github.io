@@ -33,20 +33,20 @@ function addRows(dataTable) {
   ]);
 
     // Labs
-   addLab( dataTable, 01, 2026, 08, 28),
-   addLab( dataTable, 02, 2026, 09, 04),
-   addLab( dataTable, 03, 2026, 09, 11),
-   addLab( dataTable, 04, 2026, 09, 18),
-   addLab( dataTable, 05, 2026, 09, 25),
-   addLab( dataTable, 06, 2026, 10, 02),
-   addLab( dataTable, 07, 2026, 10, 09),
-   addLab( dataTable, 08, 2026, 10, 16),
-   addLab( dataTable, 09, 2026, 10, 23),
-   addLab( dataTable, 10, 2026, 10, 30),
-   addLab( dataTable, 11, 2026, 11, 06),
-   addLab( dataTable, 12, 2026, 11, 13),
-   addLab( dataTable, 13, 2026, 11, 20, -2),
-   addLab( dataTable, 14, 2026, 12, 04),
+   addLab( dataTable, 01, 2026, 08, 27),
+   addLab( dataTable, 02, 2026, 09, 03),
+   addLab( dataTable, 03, 2026, 09, 10),
+   addLab( dataTable, 04, 2026, 09, 17),
+   addLab( dataTable, 05, 2026, 09, 24),
+   addLab( dataTable, 06, 2026, 10, 01),
+   addLab( dataTable, 07, 2026, 10, 08),
+   addLab( dataTable, 08, 2026, 10, 15),
+   addLab( dataTable, 09, 2026, 10, 22),
+   addLab( dataTable, 10, 2026, 10, 29),
+   addLab( dataTable, 11, 2026, 11, 05),
+   addLab( dataTable, 12, 2026, 11, 12),
+   addLab( dataTable, 13, 2026, 11, 19, -2),
+   addLab( dataTable, 14, 2026, 12, 03),
    dataTable.addRows([
     // Special Dates 
       [ 'Special Dates', 'Add',                 doDate(2026, 08, 24, 00, 00), doDate(2026, 08, 31, 23, 59)],
@@ -125,7 +125,7 @@ function addWeekendQuiz(num, year, month, day) {
 
 function addLab(dataTable, num, year, month, day, adjustment = 0) {
   var start = doDate(year, month, day,  6, 00);
-  var labend = doDate(year, month, day, 18, 00);
+  var labend = doDate(year, month, day + 1, 18, 00);
   var workend = doDate(year, month, day + 5 + adjustment, 18, 00);
   labend.setDate(labend.getDate());
   workend.setDate(workend.getDate());
