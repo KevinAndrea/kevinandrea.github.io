@@ -21,8 +21,8 @@ function addRows(dataTable) {
     [ 'Projects', 'PA0',       doDate(2026,  8, 31, 16,00), doDate(2026,  9, 14, 23,59)],
     [ 'Projects', 'PA1-Part1', doDate(2026,  9, 29, 10,30), doDate(2026, 10, 12, 23,59)],
     [ 'Projects', 'PA1-Part2', doDate(2026,  9, 29, 10,30), doDate(2026, 11, 02, 23,59)],
-    [ 'Projects', 'PA2-Part1', doDate(2026, 11,  2, 16,00), doDate(2026, 11, 13, 23,59)],
-    [ 'Projects', 'PA2-Part2', doDate(2026, 11,  2, 16,00), doDate(2026, 12,  4, 23,59)],
+    [ 'Projects', 'PA2-Part1', doDate(2026, 11,  3, 16,00), doDate(2026, 11, 13, 23,59)],
+    [ 'Projects', 'PA2-Part2', doDate(2026, 11,  3, 16,00), doDate(2026, 12,  4, 23,59)],
     //
     [ 'Modules', 'M1', doDate(2026,  8, 25, 10,30), doDate(2026,  8, 25, 13,15)],
     [ 'Modules', 'M2', doDate(2026,  8, 27, 10,30), doDate(2026,  9,  3, 13,15)],
