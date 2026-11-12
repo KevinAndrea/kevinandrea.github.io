@@ -38,7 +38,7 @@ function addRows(dataTable) {
     addHW_Wed( '2 (M3)', 2026,  9, 17),
     addHW_Wed( '3 (M4)', 2026, 10,  1),
     addHW_Wed( '4 (M5)', 2026, 10,  22),
-    addHW_Wed( '5 (M6)', 2026, 11,  5),
+    addHW_Wed( '5 (M6)', 2026, 11,  5, 1),
     addHW_Wed( '6 (M7)', 2026, 11,  19, 4),
     addHW_Wed( '7 (M8+9)', 2026, 12,  3, -4),
     // Exams
